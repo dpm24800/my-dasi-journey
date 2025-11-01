@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About
+date: 2025-11-02 21:12:45 +0545
 permalink: /about/
 ---
 Welcome to **My DS/AI Journey** 👋

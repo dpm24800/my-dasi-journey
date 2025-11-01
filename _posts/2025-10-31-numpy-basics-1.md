@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "NumPy Basics 1"
+title:  "NumPy Basics – 1"
 date:   2025-10-31 21:12:45 +0545
 categories: jekyll numpy
 ---
@@ -29,14 +29,14 @@ pip install numpy
 
 This Python code shows the installed NumPy version:
 
-```py
+```python
 np.__version__ # to check version
 ```
 
 ### Importing NumPy 
 Before you can use any NumPy functions, you need to import NumPy like this:
 
-```py
+```python
 import numpy as np # import numpy library
 ```
 
@@ -44,7 +44,7 @@ After importing NumPy, you can use all of its functions:
 
 ## Creating NumPy Array 
 A NumPy array holds data of the same type, unlike a Python list where elements can have different types. This makes NumPy arrays faster and more efficient than lists.
-```py
+```python
 # Create NumPy array of different data types
 arr_int = np.array([1, 2, 3, 4, 5]) # Integer array
 arr_float = np.array([1.0, 2.5, 3.9, 4.2, 5.4]) # Float array
@@ -73,7 +73,7 @@ Mixed Array (upcasted to string): ['1' '2.0' '3' '4.0' '5']
 - A single value (like the number (5)) is a zero-dimensional array, 
 - So `array.ndim` would be 0.
 
-```py
+```python
 # Zero-dimensional array
 arr0d = np.array(5)
 print("Array Dimension: ", arr0d.ndim)
@@ -88,7 +88,7 @@ Array Dimension:  0
 #### 2. One Dimensional (1D) Array
 - 1D Array: A simple list or vector
 
-```py
+```python
 # One-dimensional array
 arr1d = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12])
 
@@ -105,13 +105,16 @@ Array Dimension:  1
 #### 2. Two Dimensional (2D) Array
 - 2D Array: A table with rows and columns, like a matrix.
 
-```py
-# 2D array of 2 rows and 3 columns
-# arr2d = np.array([[1, 2, 3], [4, 5, 6]]])
+```python
+# 2D array of 4 rows and 3 columns
+# arr2d = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9], [10, 11, 12]])
+
 arr2d = np.array(
     [
-        [1, 2, 3], 
-        [4, 5, 6]
+        [1, 2, 3],
+        [4, 5, 6],
+        [7, 8, 9], 
+        [10, 11, 12]
     ]
 )
 
@@ -124,10 +127,12 @@ Output,
 Array Dimension:  2 
 
 [[ 1  2  3]
- [ 4  5  6]]
+ [ 4  5  6]
+ [ 7  8  9]
+ [10 11 12]]
 ```
----
-```py
+
+```python
 # 2D array of 10 rows and 6 columns
 # arr2d = np.array([[1, 2, 3, 4, 5, 6], [7, 8, 9, 10, 11, 12], [13, 14, 15, 16, 17, 18], [19, 20, 21, 22, 23, 24], [25, 26, 27, 28, 29, 30], [31, 32, 33, 34, 35, 36], [37, 38, 39, 40, 41, 42], [43, 44, 45, 46, 47, 48], [49, 50, 51, 52, 53, 54], [55, 56, 57, 58, 59, 60]])
 arr2d = np.array(
@@ -169,7 +174,7 @@ Array Dimension:  2
 #### 3. Three Dimensional (3D) Array
 - 3D Array: A cube, often used for images or other complex data structures.
 
-```py
+```python
 # 3D array with 1 block, 4 rows and 3 columns
 # arr3d1b = np.array([[[1, 2, 3], [4, 5, 6], [7, 8, 9], [10, 11, 12]]])
 
@@ -195,7 +200,7 @@ Array Dimension: 3
   [10 11 12]]]
 ```
 ---
-```py
+```python
 # 3D array with 2 blocks, 3 rows and 3 columns
 # arr3d2b = np.array([[[1, 2, 3], [4, 5, 6], [7, 8, 9]], [[10, 11, 12], [13, 14, 15], [16, 17, 18]]])
 
