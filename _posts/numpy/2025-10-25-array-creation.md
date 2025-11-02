@@ -5,7 +5,6 @@ date:   2025-11-02 20:40:45 +0545
 categories: jekyll numpy
 ---
 ## Table of Contents
-- [Table of Contents](#table-of-contents)
 - [1. From Python (Data) Structures: np.array(\[list/tuple\])](#1-from-python-data-structures-nparraylisttuple)
 - [2. Initial Placeholders](#2-initial-placeholders)
   - [2.1 np.zeros(shape) ✅](#21-npzerosshape-)
