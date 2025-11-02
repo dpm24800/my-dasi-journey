@@ -1,0 +1,7 @@
+numpy-introduction              2025-10-26
+numpy-nd-array                     
+array-creation                  2025-10-26
+array-attributes
+array-indexing                  2025-10-26
+array-slicing                   2025-10-26
+array-iteration                 2025-10-26

@@ -1,0 +1,12 @@
+## 10. File Input and Output (I/O)
+- Saving and loading arrays:
+  - `np.save()` / `np.load()` (binary .npy format)
+- Working with text files: 
+  - `np.savetxt()`: (text files, CSVs)
+  - `np.loadtxt()`: (text files, CSVs)
+  - `np.genfromtxt()`: for complex CSVs
+  - `np.savez()`: for multiple arrays
+- Working with binary files (`.npy` and `.npz` formats): (most efficient)
+    -   `np.save('file.npy', arr)`: 
+    -   `np.load('file.npy')`: 
+    -   `np.savez('file.npz', a=arr1, b=arr2)`: for multiple arrays.

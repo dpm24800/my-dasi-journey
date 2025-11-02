@@ -22,7 +22,7 @@ title: My DS/AI Journey
 email: dpm.it24800@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   A personal learning log of my journey through Data Science, Machine Learning, and Artificial Intelligence — from fundamentals to real-world projects.
-baseurl: "my-dsai-journey" # the subpath of your site, e.g. /blog
+baseurl: "/my-dsai-journey" # the subpath of your site, e.g. /blog
 url: "https://dpm24800.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 linkedin_username: dpm24800
 github_username:  dpm24800
