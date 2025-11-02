@@ -1,24 +1,30 @@
 ---
 layout: post
 title:  "Array Creation – NumPy"
-date:   2025-10-25 21:12:45 +0545
+date:   2025-11-02 23:40:45 +0545
 categories: jekyll numpy
 ---
 ## Table of Contents
-1. [From Python (Data) Structures](#1-from-python-data-structures)  
-	[np.array(\[list/tuple\])](#nparraylisttuple)
-1. [Initial Placeholders](#2-initial-placeholders)  
-	2.1. [np.zeros(shape)](#21-npzeros)  
-	2.2. [np.ones(shape)](#22-npones)  
-	2.3. [np.full(shape, fill\_value)](#23-npfullshape-fill_value)  
-	2.4. [np.empty(shape)](#24-npemptyshape)  
-	2.5. [np.eye(N) or np.identity(N)](#25-npeyen-or-npidentityn)  
-2. [Sequence (of numbers)](#3-sequence-of-numbers)  
+- [1. From Python (Data) Structures: np.array(\[list/tuple\])](#1-from-python-data-structures-nparraylisttuple)
+- [2. Initial Placeholders](#2-initial-placeholders)
+  - [2.1 np.zeros(shape) ✅](#21-npzerosshape-)
+  - [2.2. np.ones(shape) ✅](#22-nponesshape-)
+  - [2.3. np.full(shape, fill\_value) ✅](#23-npfullshape-fill_value-)
+  - [2.4. np.empty(shape)](#24-npemptyshape)
+  - [2.5. np.eye(N) or np.identity(N)](#25-npeyen-or-npidentityn)
+    - [np.eye()](#npeye)
+    - [np.identity()](#npidentity)
+- [3. Array Range: np.arange()](#3-array-range-nparange)
+  - [3.1. 1-D Sequence](#31-1-d-sequence)
+  - [3.2. N-D Sequence: using reshape() with arange()](#32-n-d-sequence-using-reshape-with-arange)
+    - [2-D Sequence](#2-d-sequence)
+    - [3-D Sequence](#3-d-sequence)
+    - [4-D Sequence](#4-d-sequence)
+- [4. Linearly spaced values: np.linspace()](#4-linearly-spaced-values-nplinspace)
 
 ---
 
-## 1. From Python (Data) Structures
-### np.array([list/tuple])
+## 1. From Python (Data) Structures: np.array([list/tuple])
 - Create an array from a Python list or tuple.
 
 ## 2. Initial Placeholders
@@ -272,13 +278,65 @@ np.full((2, 4, 4), 10):
   [10 10 10 10]]]
 ```
 
-### 2.4 np.empty(shape)
-Creates an array with EMPTY (uninitialized) data
+### 2.4. np.empty(shape)
+The `np.empty()` function creates an array of a specified **shape** without initializing its values — that is, the array contains **EMPTY/random or uninitialized values** already present at that memory location.
 
-### 2.5 np.eye(N) or np.identity(N)
-Creates an N times IDENTITY MATRIX: see deepseek
+* **Syntax:** `np.empty(shape, dtype=float)`
+  * The `shape` parameter defines the dimensions of the array.
+  * The optional `dtype` argument specifies the data type (default is `float`).
 
-## 3. Sequence (of numbers)
+
+
+### 2.5. np.eye(N) or np.identity(N)
+Creates an N times IDENTITY MATRIX:  
+Both `np.eye()` and `np.identity()` functions create a **2-D identity matrix**, where all diagonal elements are **1** and all other elements are **0**.
+
+#### np.eye()
+* **Syntax:** `np.eye(N, M=None, k=0, dtype=float)`
+  * `N` → number of rows
+  * `M` → number of columns (defaults to `N` for a square matrix)
+  * `k` → index of the diagonal (0 is main diagonal)
+
+```python
+import numpy as np
+arr = np.eye(3)
+print(arr)
+```
+
+Output,
+```
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+```
+
+#### np.identity()
+* **Syntax:** `np.identity(n, dtype=None)`
+  * Always creates a **square identity matrix** of size `n x n`.
+
+```python
+arr = np.identity(4)
+print(arr)
+```
+
+Output,
+```
+[[1. 0. 0. 0.]
+ [0. 1. 0. 0.]
+ [0. 0. 1. 0.]
+ [0. 0. 0. 1.]]
+```
+
+> Use `np.eye()` for more control (e.g., non-square matrices or shifted diagonals),
+> and `np.identity()` for simple square identity matrices.
+
+## 3. Array Range: np.arange()
+The term arange comes from “array” + “range.”
+It means “create an array within a range of values.”
+
+In Python, the built-in range() function generates a sequence of numbers — but it doesn’t return an array.  
+NumPy’s np.arange() does the same thing, except it returns a NumPy array instead of a Python range object.
+
 The `arange()` function creates a **1-D array** of numbers within a specified range.
 * With **one argument** → interpreted as `end` (exclusive).
 * With **two arguments** → interpreted as `start` and `end` (exclusive).
@@ -426,6 +484,27 @@ np.arange(1, 121).reshape(2, 3, 4, 5):
    [116 117 118 119 120]]]]
 ```
 
-4. Linear Space
-5. `np.linspace(start, stop, num)`: Creates an array with a specified number of evenly spaced values over a given interval.
+## 4. Linearly spaced values: np.linspace()
+The `np.linspace()` function creates an array with a **specified number of evenly spaced values** between a **start** and **stop** value (inclusive by default).
 
+* **Syntax:** `np.linspace(start, stop, num=50, endpoint=True, dtype=None)`
+  * `start` → starting value of the sequence
+  * `stop` → ending value of the sequence
+  * `num` → number of samples to generate (default is 50)
+  * `endpoint` → if `True`, the stop value is included in the range
+  * `dtype` → optional data type of the output array
+
+**Example:**
+
+```python
+import numpy as np
+arr = np.linspace(0, 10, 5)
+print(arr)
+```
+
+Output,
+```
+[ 0.   2.5  5.   7.5 10. ]
+```
+
+> Use `np.linspace()` when you need a specific number of equally spaced values within a range (useful in plotting and mathematical computations).
