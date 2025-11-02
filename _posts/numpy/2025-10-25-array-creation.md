@@ -22,10 +22,12 @@ categories: jekyll numpy
 - Create an array from a Python list or tuple.
 
 ## 2. Initial Placeholders
-### 2.1 np.zeros(shape)
-The `zeros()` function creates an array of a specified shape filled with **zeros**.  
-By default, the data type of the array is **float**, but the `dtype` parameter can be used to specify a different data type.  
-Examples:
+### 2.1 np.zeros(shape) ✅
+The `np.zeros()` function creates an array of a specified **shape** filled entirely with **zeros**.
+
+* **Syntax:** `np.zeros(shape, dtype=None)`
+  * The `shape` parameter defines the dimensions of the array.
+  * The optional `dtype` argument specifies the data type (default is `float`).
 
 **1-D array of zeros**: 
 ```py
@@ -125,10 +127,12 @@ Output,
    [0 0 0 0 0]]]]
 ```
 
-### 2.2 np.ones(shape)
-The `ones()` function creates an array of a specified shape filled with **ones**.  
-By default, the data type of the array is **float**, but the `dtype` parameter can be used to specify a different data type.  
-Examples:
+### 2.2. np.ones(shape) ✅
+The `np.ones()` function creates an array of a specified **shape** filled entirely with **ones**.
+
+* **Syntax:** `np.ones(shape, dtype=None)`
+  * The `shape` parameter defines the dimensions of the array.
+  * The optional `dtype` argument specifies the data type (default is `float`).
 
 **1-D array of ones**: 
 ```py
@@ -223,7 +227,7 @@ Output,
    [1 1 1 1 1]
    [1 1 1 1 1]]]]
 ```
-### 2.3. np.full(shape, fill_value) 
+### 2.3. np.full(shape, fill_value) ✅
 The `np.full()` function creates an array of a given *shape* and fills it with a *specified constant value*.
 - **Syntax**: `np.full(shape, fill_value, dtype=None)`
   - The `shape` defines the dimensions of the array.
