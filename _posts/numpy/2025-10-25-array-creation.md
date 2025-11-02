@@ -223,9 +223,50 @@ Output,
    [1 1 1 1 1]
    [1 1 1 1 1]]]]
 ```
-### 2.3 np.full(shape, fill_value) 
-Creates an array filled with a specific value
+### 2.3. np.full(shape, fill_value) 
+The `np.full()` function creates an array of a given *shape* and fills it with a *specified constant value*.
+- **Syntax**: `np.full(shape, fill_value, dtype=None)`
+  - The `shape` defines the dimensions of the array.
+  - The `fill_value` specifies the value to fill the array with.
+  - The optional `dtype` argument sets the data type (default is `float`).
 
+```py
+# Create a 2D array of shape (4, 4) filled with 5
+import numpy as np
+arr24 = np.full((4, 4), 5)
+
+print("np.full((4, 4), 5):\n", arr24)
+```
+Output,
+```
+np.full((4, 4), 5):
+ [[5 5 5 5]
+ [5 5 5 5]
+ [5 5 5 5]
+ [5 5 5 5]]
+```
+
+```py
+# Create a 3-D array of shape (2, 4, 4) filled with 10
+import numpy as np
+arr25 = np.full((2, 4, 4), 10)
+
+print("np.full((2, 4, 4), 10):\n", arr25)
+```
+
+Output,
+```
+np.full((2, 4, 4), 10):
+ [[[10 10 10 10]
+  [10 10 10 10]
+  [10 10 10 10]
+  [10 10 10 10]]
+
+ [[10 10 10 10]
+  [10 10 10 10]
+  [10 10 10 10]
+  [10 10 10 10]]]
+```
 
 ### 2.4 np.empty(shape)
 Creates an array with EMPTY (uninitialized) data

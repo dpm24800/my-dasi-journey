@@ -24,3 +24,4 @@
   - `np.random.normal()` – Normal distribution
   - `np.random.uniform()` – Uniform distribution
   - `np.random.binomial()` – Binomial distribution
+
