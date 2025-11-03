@@ -29,7 +29,7 @@ date: 2025-11-01 21:12:45 +0545
 - [NumPy Basics – 8](jekyll/numpy/2025/10/31/numpy-basics-8.html) -->
 
 ## NumPy
-- [Numpy Introduction](#)
+- [Numpy Introduction](jekyll/numpy/2025/11/03/introduction-to-numpy.html)
 - [Array Creation](jekyll/numpy/2025/11/02/array-creation.html)
 - [Array Indexing](jekyll/numpy/2025/11/03/array-indexing.html)
 - [Array Slicing](jekyll/numpy/2025/10/25/array-slicing.html)
