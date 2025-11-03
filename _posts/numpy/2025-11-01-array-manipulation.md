@@ -7,7 +7,20 @@ categories: jekyll numpy
 
 ## 7. Array Manipulation
 ### Reshaping Array: Changing Array Shape
+**Reshaping Arrays**  
+You can reshape a NumPy array to change its dimensions.
 
+
+```python
+arr = np.array([1, 2, 3, 4, 5, 6])
+
+# Reshape the array into a 2D array (2 rows, 3 columns)
+reshaped_arr = arr.reshape(2, 3)
+print(reshaped_arr)
+```
+
+    [[1 2 3]
+     [4 5 6]]
 
 ### Transposing Array
 `arr.T` or `np.transpose(arr)`: Swaps the rows and columns (or permutes dimensions for N-D arrays).

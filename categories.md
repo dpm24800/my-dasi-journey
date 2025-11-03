@@ -30,8 +30,8 @@ date: 2025-11-01 21:12:45 +0545
 
 ## NumPy
 - [Numpy Introduction](#)
-- [Array Creation](jekyll/numpy/2025/10/25/array-creation.html)
-- [Array Indexing](jekyll/numpy/2025/10/25/array-creation.html)
-- [Array Slicing](jekyll/numpy/2025/10/25/array-creation.html)
-- [Array Broadcasting](jekyll/numpy/2025/10/25/array-creation.html)
-- [Array Manipulation](jekyll/numpy/2025/10/25/array-creation.html)
+- [Array Creation](jekyll/numpy/2025/11/02/array-creation.html)
+- [Array Indexing](jekyll/numpy/2025/11/03/array-indexing.html)
+- [Array Slicing](jekyll/numpy/2025/10/25/array-slicing.html)
+- [Array Broadcasting](jekyll/numpy/2025/10/25/array-broadcasting.html)
+- [Array Manipulation](jekyll/numpy/2025/10/25/array-manipulation.html)

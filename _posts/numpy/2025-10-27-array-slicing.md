@@ -4,8 +4,20 @@ title:  "Array Slicing – NumPy"
 date:   2025-10-31 21:12:45 +0545
 categories: jekyll numpy
 ---
-## Array Slicing
+## Array Slicing/Subsetting
+Just like lists in Python, NumPy arrays can be indexed and sliced to extract specific elements or subsets of data.
+
 ### Slicing 1D Array
+**2. Slicing a 1D Array**  
+You can extract a range of elements using slicing.
+
+
+```python
+# Slice the array to get elements from index 1 to 3
+print(arr[1:4])  # Output: [20 30 40]
+```
+
+    [20 30 40]
 
 ```py
 # Slicing 1-D Array
@@ -25,6 +37,25 @@ array[1:12:2]: [ 2  4  6  8 10 12]
 ```
 
 ### Slicing 2-D Array
+Slicing works similarly in 2D arrays.
+
+
+```python
+# Slice the first row
+print(arr_2d[0, :])  # Output: [1 2 3]
+```
+
+    [1 2 3]
+    
+
+
+```python
+# Slice the second column
+print(arr_2d[:, 1])  # Output: [2 5]
+```
+
+    [2 5]
+
 
 #### Slicing 2-D Array with step
 ```py

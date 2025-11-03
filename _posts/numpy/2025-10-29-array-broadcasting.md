@@ -8,3 +8,21 @@
     -   **Rules:** 1) Trailing dimensions equal, or 2) One of them is 1.
     -   Examples: Adding a 1D array to a 2D array, scalar with an array.
     -   Using `np.newaxis`/`None` to reshape arrays for broadcasting.
+-   
+
+**Broadcasting**
+Broadcasting allows NumPy to perform operations on arrays of different shapes. This is
+useful when you need to perform operations between arrays with different dimensions.
+
+Example of Broadcasting
+
+
+```python
+arr = np.array([1, 2, 3])
+
+# Add a scalar to the array
+print(arr + 10)  # Output: [11 12 13]
+```
+
+    [11 12 13]
+    

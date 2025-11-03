@@ -4,7 +4,11 @@ title:  "Array Indexing – NumPy"
 date:   2025-10-31 21:12:45 +0545
 categories: jekyll numpy
 ---
+
+Just like lists in Python, NumPy arrays can be indexed and sliced to extract specific elements or subsets of data.
+
 ### 1-D Array Indexing
+You can access elements of a 1D array using their index.
 ```py
 # Indexing 1-D Array
 arr1d = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12])
@@ -28,6 +32,9 @@ array[-1]: 12
 ```
 
 ### 2-D Array Indexing
+- Indexing a 2-D Array
+You can index a 2D array using two indices (row, column).
+
 - In a 2-D array indexing (e.g., `arr2d[1, 2]`),
   - The first number specifies the row.
   - The second number specifies the column.
