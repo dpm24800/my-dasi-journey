@@ -4,6 +4,12 @@ title:  "Introducing NumPy"
 date:   2025-11-02 10:12:45 +0545
 categories: numpy
 ---
+
+<center>
+    <!-- ![numpy-logo](../../../../assets/numpy-logo.png) -->
+    <img src="../../../../assets/numpy-logo.png">
+</center>
+
 ## What is NumPy?
 - NumPy (Numerical Python) is a foundational open-source Python library 
   - that provides efficient tools for (working with: creating and manipulating) **large, multi-dimensional arrays and matrices**, 
