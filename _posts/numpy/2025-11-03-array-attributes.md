@@ -44,13 +44,20 @@ If you have not read this post yet, please consider reading this post - [Array C
 - It tells you how many axes the array has, which corresponds to the number of nested levels of lists used to create it.
 
 ## Array Shape (array.shape) 
-- `array.ndim` attribute returns the number of dimensions of an array. 
-- It tells you how many axes the array has, which corresponds to the number of nested levels of lists used to create it.
-- Exa
+- The `array.shape` attribute returns the dimensions (shape) of a NumPy array as a tuple.
+- It shows how many elements are present along each axis (rows, columns, etc.).
+- The shape of an array looks like:
+  - 0-D Array: ()
+  - 1-D Array: (n,): (5,)
+  - 2-D Array: (2, 5), (5, 2)
+  - 3-D Array: (2, 3, 4), (3, 5, 7)
 
 ## Array Size (array.size) 
-- `array.ndim` attribute returns the number of dimensions of an array. 
-- It tells you how many axes the array has, which corresponds to the number of nested levels of lists used to create it.
+- The `array.size` attribute returns the total number of elements in the array.
+- It counts all items, regardless of the shape.
+
+**shape vs. size**:
+the total number of elements in the array.
 
 ## Examples:
 Here are examples of `array.ndim()`, `array.shape` and `array.size()`.

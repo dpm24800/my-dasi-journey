@@ -4,21 +4,21 @@ title: About
 date: 2025-11-02 21:12:45 +0545
 permalink: /about/
 ---
-Welcome to **My DS/AI Journey** 👋
+Welcome to **My DS/AI Journey**
 
 This blog is my personal space to document and share everything I learn on my path to becoming a **Data Scientist** and **Machine Learning Engineer**.  
 Here, I explore concepts, experiments, and projects related to **Data Science**, **Machine Learning**, and **Artificial Intelligence** — from foundational math and Python programming to building real-world models and understanding modern AI systems.
 
 ---
 
-### 🌱 Why I Started This Blog
+### Why I Started This Blog
 I believe that learning is most effective when shared.  
 Writing about what I learn not only helps me remember it better but also allows others who are on a similar journey to benefit from it.  
 This site serves as a **public learning journal** — a place to organize my notes, record my experiments, and track my growth over time.
 
 ---
 
-### 🧠 What You’ll Find Here
+### What You’ll Find Here
 - Notes and tutorials on **Data Science, ML, and AI fundamentals**  
 - Step-by-step **project walkthroughs**  
 - Key ideas from books, papers, and courses  
@@ -27,13 +27,13 @@ This site serves as a **public learning journal** — a place to organize my not
 
 ---
 
-### 🚀 My Goal
+### My Goal
 To build a strong foundation in Data Science and Machine Learning,  
 and eventually contribute to **AI solutions that make a real-world impact** — while staying curious, humble, and consistent in the process.
 
 ---
 
-### 💬 Let’s Connect
+### Let’s Connect
 If you share the same passion for data, learning, and AI — feel free to reach out!  
 You can find me on:  
 - **GitHub:** [dpm24800](https://github.com/dpm24800)  

@@ -2,7 +2,7 @@
 layout: post
 title:  "NumPy – note plan"
 date:   2025-10-31 21:12:45 +0545
-categories: jekyll note-plans
+categories: note-plans
 ---
 ## 1. Introduction to NumPy
 - **What is NumPy?**

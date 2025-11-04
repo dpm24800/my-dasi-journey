@@ -24,7 +24,13 @@ categories: numpy
 - [4. Linearly spaced values: np.linspace() ✅](#4-linearly-spaced-values-nplinspace-)
 
 ---
+
 &nbsp;
+<center>
+<!-- ![numpy-logo](../../../../assets/numpy-logo.png) -->
+<img src="../../../../assets/numpy-logo.png">
+</center>
+
 <!-- ## Creating NumPy Array -->
 <!-- A NumPy array holds data of the same type, unlike a Python list where elements can have different types. This makes NumPy arrays faster and more efficient than lists. -->
 
@@ -660,3 +666,5 @@ np.linspace(25, 50, 12).reshape(2, 3, 2):
 ```
 
 > Use `np.linspace()` when you need a specific number of equally spaced values within a range (useful in plotting and mathematical computations).
+
+
