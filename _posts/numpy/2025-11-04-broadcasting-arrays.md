@@ -61,6 +61,13 @@ Output,
 - [Broadcasting](https://numpy.org/doc/stable/user/basics.broadcasting.html)
 - [NumPy Array Broadcasting](https://www.geeksforgeeks.org/numpy/numpy-array-broadcasting/)
 
+**YouTube**:
+- [Learn Broadcasting In Numpy Arrays - Machine Learning Tutorial
+](https://www.youtube.com/watch?v=mQd6UnJ4cTY)
+- [Broadcasting | Begin your AI Journey with NumPy
+](https://www.youtube.com/watch?v=EcxldDbZv10)
+
+**Google Search**:
 - [What is broadcasting in numpy- Google Search](https://www.google.com/search?q=what+is+broadcasting+in+numpy&rlz=1C1ONGR_enNP1174NP1174&oq=what+is+broadcs&gs_lcrp=EgZjaHJvbWUqCQgBEAAYDRiABDIGCAAQRRg5MgkIARAAGA0YgAQyCQgCEAAYDRiABDIJCAMQABgNGIAEMgkIBBAAGA0YgAQyCQgFEAAYDRiABDIJCAYQABgNGIAEMgkIBxAAGA0YgAQyCQgIEAAYDRiABDIJCAkQABgNGIAE0gEINjE2MWowajeoAgCwAgA&sourceid=chrome&ie=UTF-8)
 
 --- 

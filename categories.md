@@ -27,4 +27,4 @@ date: 2025-11-01 21:12:45 +0545
 5. [Slicing Arrays – NumPy](numpy/2025/11/03/slicing-arrays.html)
 6. [Iterating (over) Array – NumPy](numpy/2025/11/03/iterating-arrays.html)
 7. [Array Manipulation – NumPy](numpy/2025/11/03/array-manipulation.html)
-8. [Broadcasting Arrays – NumPy](numpy/2025/11/03/array-broadcasting.html)
+8. [Broadcasting Arrays – NumPy](numpy/2025/11/04/broadcasting-arrays.html)
