@@ -14,6 +14,7 @@ categories: numpy
   - [IDENTITY MATRIX](#identity-matrix)
     - [5. np.eye()](#5-npeye)
     - [6. np.identity()](#6-npidentity)
+    - [np.eye() vs np.identiy()](#npeye-vs-npidentiy)
 - [3. Array Range: np.arange()](#3-array-range-nparange)
   - [1-D Array Range](#1-d-array-range)
   - [N-D Array Range: with array.reshape()](#n-d-array-range-with-arrayreshape)
@@ -30,17 +31,20 @@ categories: numpy
 NumPy Arrays can be created with a couple of methods, here are common ones:
 
 ## 1. From Python (Data) Structures ✅
-The **`np.array()`** function creates an array from a Python list or tuple.
+The **`np.array()`** function creates an array of various dimensions from a Python list or tuple.
 
 **Syntax**: `np.array([list])` or `np.array((tuple))`
 
 **Example**:
 ```python
-# Create NumPy array of different data types from a Python list or tuple
+# Create NumPy array of different data types 
+# from a Python list
 arr_int = np.array([1, 2, 3, 4, 5]) # Integer array created from a list
 arr_float = np.array([1.0, 2.5, 3.9, 4.2, 5.4]) # Float array  created from a list
-arr_str = np.array(('1', '2', '3', '4', '5')) # String array created from a tuple
-arr_mixed = np.array((1, 2.0, '3', 4.0, 5)) # Mixed array with string  created from a tuple
+
+# From a tuple
+arr_str = np.array(('1', '2', '3', '4', '5')) # String array 
+arr_mixed = np.array((1, 2.0, '3', 4.0, 5)) # Mixed array with string
 
 print("Integer Array:", arr_int)
 print("Float Array:", arr_float)
@@ -55,7 +59,9 @@ Float Array: [1.  2.5 3.9 4.2 5.4]
 String Array: ['1' '2' '3' '4' '5']
 Mixed Array (upcasted to string): ['1' '2.0' '3' '4.0' '5']
 ```
-See more on: [Dimensions of Array](#) for arrays of different dimensions.
+See more on: [Dimensions of Array](/my-dsai-journey/numpy/2025/11/03/array-attributes.html#array-dimensions-arrayndim) for arrays of various dimensions.
+
+http://127.0.0.1:4000/my-dsai-journey/numpy/2025/11/02/numpy/2025/11/03/array-attributes.html#array-dimensions-arrayndim
 
 ## 2. Initial Placeholders
 ### 1. np.zeros(shape) ✅
@@ -323,6 +329,14 @@ The `np.empty()` function creates an array of a specified **shape** without init
 
 ### IDENTITY MATRIX
 <!-- Creates an N times IDENTITY MATRIX:   -->
+An identity matrix is a **square matrix** with **ones on the main diagonal** and **zeros everywhere else**. It acts as the multiplicative identity in matrix operations, meaning that when any matrix is multiplied by the identity matrix (of the correct size), the result is the original matrix.
+
+**Key characteristics**:
+- **Square Matrix:** An identity matrix must have the same number of rows and columns.
+- **Ones on the Diagonal:** All the elements along the main diagonal (from the top-left to the bottom-right) are 1.
+- **Zeros Elsewhere:** All other elements, not on the main diagonal, are 0.
+- **Multiplicative Identity:** Multiplying a matrix A by the identity matrix 𝐼 results in the original matrix 𝐴(AI = A and IA = A).
+- **Notation:** The identity matrix is often denoted by I<sub>n</sub>, where n is the size of the matrix (e.g., I<sub>2</sub> for a 2 x 2 matrix).
 
 Both `np.eye()` and `np.identity()` functions create a **2-D identity matrix**, where all diagonal elements are **1** and all other elements are **0**.
 
@@ -346,8 +360,8 @@ Output,
 ```
 
 #### 6. np.identity()
+* Always creates a **square identity matrix** of size `n x n`.
 * **Syntax:** `np.identity(n, dtype=None)`
-  * Always creates a **square identity matrix** of size `n x n`.
 
 ```python
 arr = np.identity(4)
@@ -361,9 +375,67 @@ Output,
  [0. 0. 1. 0.]
  [0. 0. 0. 1.]]
 ```
+#### np.eye() vs np.identiy()
+- Use `np.eye()` for more control (e.g., non-square matrices or shifted diagonals),  
+- and `np.identity()` for simple square identity matrices.
 
-> Use `np.eye()` for more control (e.g., non-square matrices or shifted diagonals),
-> and `np.identity()` for simple square identity matrices.
+**Examples 1**:
+```py
+# np.eye() can produce non-square matrix as well if shape given explicitly
+import numpy as np
+
+arr2d = np.eye(3, 4)        # row, column
+arr3d = np.eye(4, 5, 1)     # row, column, index of 1 for shifted diagonals
+
+print("np.eye(3, 4):\n", arr2d, "\n")
+print("np.eye(2, 3, 4):\n", arr3d, "\n")
+```
+Output,
+```
+np.eye(3, 4):
+ [[1. 0. 0. 0.]
+ [0. 1. 0. 0.]
+ [0. 0. 1. 0.]] 
+
+np.eye(2, 3, 4):
+ [[0. 1. 0. 0. 0.]
+ [0. 0. 1. 0. 0.]
+ [0. 0. 0. 1. 0.]
+ [0. 0. 0. 0. 1.]] 
+```
+
+**Example 2**:
+```py
+# np.identity() cannot produce non-square matrix, it only produces square matrix.
+import numpy as np
+
+arr2d = np.identity(3, 4)        # row, column
+print("np.identity(3, 4):\n", arr2d)
+```
+**Output**,
+```
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+Cell In[206], line 4
+      1 # np.identity() cannot produce non-square matrix, it only produces square matrix.
+      2 import numpy as np
+----> 4 arr2d = np.identity(3, 4)        # row, column
+      5 print("np.identity(3, 4):\n", arr2d)
+
+File c:\Users\NAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\_core\numeric.py:2269, in identity(n, dtype, like)
+   2266     return _identity_with_like(like, n, dtype=dtype)
+   2268 from numpy import eye
+-> 2269 return eye(n, dtype=dtype, like=like)
+
+File c:\Users\NAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_twodim_base_impl.py:235, in eye(N, M, k, dtype, order, device, like)
+    233 if M is None:
+    234     M = N
+--> 235 m = zeros((N, M), dtype=dtype, order=order, device=device)
+    236 if k >= M:
+    237     return m
+
+TypeError: Cannot interpret '4' as a data type
+```
 
 ## 3. Array Range: np.arange()
 The term arange comes from “array” + “range.” It means “create an array within a range of values.”
