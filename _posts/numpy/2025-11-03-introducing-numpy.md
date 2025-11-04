@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Introduction to NumPy"
-date:   2025-11-03 10:12:45 +0545
+title:  "Introducing NumPy"
+date:   2025-11-02 10:12:45 +0545
 categories: jekyll numpy
 ---
 ## What is NumPy?

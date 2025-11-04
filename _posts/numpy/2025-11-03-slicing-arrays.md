@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Array Slicing – NumPy"
-date:   2025-10-31 21:12:45 +0545
+title:  "Slicing Arrays – NumPy"
+date:   2025-11-03 21:12:45 +0545
 categories: jekyll numpy
 ---
 ## Array Slicing/Subsetting

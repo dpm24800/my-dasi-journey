@@ -1,36 +1,163 @@
 ---
 layout: post
 title: "Array Manipulation – NumPy"
-date: 2025-11-01 05:12:45 +0545
+date: 2025-11-03 05:12:45 +0545
 categories: jekyll numpy
 ---
+## Table of Contents
+- [Reshaping Array: Changing Array Shape](#reshaping-array-changing-array-shape)
+  - [Reshaping to 2-D](#reshaping-to-2-d)
+  - [Reshaping to 3-D](#reshaping-to-3-d)
+  - [arr.reshape() returns a new view](#arrreshape-returns-a-new-view)
+- [Transposing an Array](#transposing-an-array)
+  - [Transposing 2-D Array](#transposing-2-d-array)
+    - [Transposing 3-D Array](#transposing-3-d-array)
 
-## 7. Array Manipulation
-### Reshaping Array: Changing Array Shape
-**Reshaping Arrays**  
-You can reshape a NumPy array to change its dimensions.
+## Reshaping Array: Changing Array Shape
+Reshaping an array means changing its dimension. NumPy provides `np.reshape()` function to reshape or change the dimensions of an array.
 
+**Syntax**: `np.reshape(shape)`
 
+### Reshaping to 2-D
+**Example 1**:
 ```python
-arr = np.array([1, 2, 3, 4, 5, 6])
+# Reshape the array into  2D arrays
+arr = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12])
 
-# Reshape the array into a 2D array (2 rows, 3 columns)
-reshaped_arr = arr.reshape(2, 3)
-print(reshaped_arr)
+reshaped_arr1 = arr.reshape(2, 6)
+reshaped_arr2 = arr.reshape(6, 2)
+reshaped_arr3 = arr.reshape(4, 3)
+reshaped_arr4 = arr.reshape(3, 4)
+
+print("Original Array:\n", arr, "\n")
+print("arr.reshape(2, 6):\n", reshaped_arr1, "\n")
+print("arr.reshape(6, 2):\n", reshaped_arr2, "\n")
+print("arr.reshape(4, 3):\n", reshaped_arr3, "\n")
+print("arr.reshape(3, 4):\n", reshaped_arr4, "\n")
+```
+**Output**,
+```
+Original Array:
+ [ 1  2  3  4  5  6  7  8  9 10 11 12] 
+
+arr.reshape(2, 6):
+ [[ 1  2  3  4  5  6]
+ [ 7  8  9 10 11 12]] 
+
+arr.reshape(6, 2):
+ [[ 1  2]
+ [ 3  4]
+ [ 5  6]
+ [ 7  8]
+ [ 9 10]
+ [11 12]] 
+
+arr.reshape(4, 3):
+ [[ 1  2  3]
+ [ 4  5  6]
+ [ 7  8  9]
+ [10 11 12]] 
+
+arr.reshape(3, 4):
+ [[ 1  2  3  4]
+ [ 5  6  7  8]
+ [ 9 10 11 12]] 
 ```
 
-    [[1 2 3]
-     [4 5 6]]
+### Reshaping to 3-D
 
-### Transposing Array
+```py
+# Reshape the array into  3D arrays
+arr = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12])
+
+reshaped_arr1 = arr.reshape(1, 4, 3)
+reshaped_arr2 = arr.reshape(2, 2, 3)
+reshaped_arr3 = arr.reshape(3, 2, 2)
+
+print("Original Array:\n", arr, "\n")
+print("arr.reshape(1, 4, 3):\n", reshaped_arr1, "\n")
+print("arr.reshape(2, 2, 3):\n", reshaped_arr2, "\n")
+print("arr.reshape(3, 2, 2):\n", reshaped_arr3, "\n")
+```
+
+**Output**,
+```
+Original Array:
+ [ 1  2  3  4  5  6  7  8  9 10 11 12] 
+
+arr.reshape(1, 4, 3):
+ [[[ 1  2  3]
+  [ 4  5  6]
+  [ 7  8  9]
+  [10 11 12]]] 
+
+arr.reshape(2, 2, 3):
+ [[[ 1  2  3]
+  [ 4  5  6]]
+
+ [[ 7  8  9]
+  [10 11 12]]] 
+
+arr.reshape(3, 2, 2):
+ [[[ 1  2]
+  [ 3  4]]
+
+ [[ 5  6]
+  [ 7  8]]
+
+ [[ 9 10]
+  [11 12]]] 
+```
+
+### arr.reshape() returns a new view
+- arr.reshape() function doesn’t permanently change the shape of the original array — it only returns a new view (or copy) of the array with the specified shape.
+
+**Example**: 
+```py
+arr = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12])
+
+print("arr:\n", arr, "\n")
+print("arr.reshape(4, 3):\n", arr.reshape(4, 3), "\n")
+print("arr:\n", arr, "\n")
+```
+
+**Output**,
+```
+arr:
+ [ 1  2  3  4  5  6  7  8  9 10 11 12] 
+
+arr.reshape(4, 3):
+ [[ 1  2  3]
+ [ 4  5  6]
+ [ 7  8  9]
+ [10 11 12]] 
+
+arr:
+ [ 1  2  3  4  5  6  7  8  9 10 11 12] 
+```
+
+
+
+
+## Transposing an Array
+Transposing an array means changing/swapping the axis/dimensions of an array. NumPy provides `arr.T` attribute(?) and `np.transpose(arr)` function for swapping the dimensions (depth, rows and columns)
 `arr.T` or `np.transpose(arr)`: Swaps the rows and columns (or permutes dimensions for N-D arrays).
 
-#### Transposing 2-D Array
+Syntax: `arr.T`
+- `arr` -> array to be transposed
+- `.T` -> attribute to transpose an array
+
+**np.transpose(arr)**:
+Syntax**: np.transpose(arr)
+- arr -> array to be transposed
+
+### Transposing 2-D Array
 During the transpose of a 2D NumPy array:
 - The number of columns becomes the number of rows.
 - The number of rows becomes the number of columns.
   - Thus, a 2D array with shape `(3, 4)` becomes `(4, 3)` after transposition.
 
+**Example 1**:
 ```python
 # Transposing 2-D array
 
@@ -51,7 +178,7 @@ print("Transposed Array:\n", arr2d_t, "\n")
 print("Transposed Array (shape):", arr2d_t.shape)
 ```
 
-Output,
+**Output**,
 ```
 Original Array:
  [[ 1  2  3  4  5  6]
@@ -72,6 +199,7 @@ Transposed Array (shape): (6, 3)
 ```
 **Note**: `np.transpose(arr)` also does the same thing as `arr.T` does, (i.e. transposition of array).
 
+**Example 2**:
 ```python
 # Transposing 2-D array
 
@@ -94,7 +222,7 @@ print("Transposed Array:\n", arr_trans, "\n")
 print("Transposed Array (shape):", arr_trans.shape)
 ```
 
-Output,
+**Output,**
 ```
 Original Array:
  [[ 10  20  30  40]
@@ -115,7 +243,7 @@ Transposed Array (shape): (4, 5)
 ```
 
 #### Transposing 3-D Array
-During the transpose of a 3D NumPy array:
+During the transpos of a 3D NumPy array:
   - The number of **columns** becomes the number of **blocks** (or depth).
   - The number of **rows** becomes the number of **columns**.
   - The number of **blocks** becomes the number of **rows**.
@@ -127,6 +255,8 @@ When you apply a transpose operation, NumPy rearranges these axes — by default
 
 So, if you want to describe it conceptually:
 > Transposing a 3D array swaps the roles of blocks, rows, and columns — the structure is reoriented along different axes.
+
+**Example 1**:
 
 ```python
 # Transposing a 3-D array
@@ -150,7 +280,7 @@ print("Transposed 3-D Array:\n", arr3d_t, "\n")
 print("Transposed Array Shape:", arr3d_t.shape)
 ```
 
-Output,
+**Output**,
 ```
 Original 3-D Array:
  [[[ 1  2  3  4]
@@ -178,7 +308,7 @@ Transposed 3-D Array:
 
 Transposed Array Shape: (4, 3, 1)
 ```
-
+**Example 2:**
 ```py
 # Transposing a 3-D array
 
@@ -214,7 +344,7 @@ print("Transposed 3-D Array:\n", arr3d_t, "\n")
 print("Transposed Array Shape:", arr3d_t.shape)
 ```
 
-Output,
+**Output**,
 ```
 Original 3-D Array:
  [[[ 1  2  3  4  5]

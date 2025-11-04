@@ -1,14 +1,16 @@
 ---
 layout: post
-title:  "Array Indexing – NumPy"
-date:   2025-10-31 21:12:45 +0545
+title:  "Indexing Arrays – NumPy"
+date:   2025-11-03 12:12:45 +0545
 categories: jekyll numpy
 ---
-
+Accessing an array elements is called indexing. 
 Just like lists in Python, NumPy arrays can be indexed and sliced to extract specific elements or subsets of data.
 
 ### 1-D Array Indexing
-You can access elements of a 1D array using their index.
+The elements of an 1-D array can be accessed through its index, like this:  
+**Syntax**: array[index]
+
 ```py
 # Indexing 1-D Array
 arr1d = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12])
@@ -31,9 +33,8 @@ array[5]: 6
 array[-1]: 12
 ```
 
-### 2-D Array Indexing
-- Indexing a 2-D Array
-You can index a 2D array using two indices (row, column).
+### 2-D Array Indexing 
+- A 2-D array can be indexed using two indices (row, column).
 
 - In a 2-D array indexing (e.g., `arr2d[1, 2]`),
   - The first number specifies the row.
