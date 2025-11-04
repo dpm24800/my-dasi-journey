@@ -2,7 +2,7 @@
 layout: post
 title:  "NumPy Functions"
 date:   2025-10-31 21:12:45 +0545
-categories: jekyll numpy
+categories: numpy
 ---
 
  SN. | Functions | Descriptions |

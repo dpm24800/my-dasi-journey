@@ -5,33 +5,34 @@ date: 2025-11-01 21:12:45 +0545
 # permalink: /categories/
 ---
 <!-- ## Python
-- [Python Basics – 1](jekyll/python/2025/11/31/numpy-basics-1.html)
-- [Python Basics – 2](jekyll/python/2025/11/31/numpy-basics-2.html)
-- [Python Basics – 3](jekyll/python/2025/11/31/numpy-basics-3.html)
-- [Python Basics – 4](jekyll/python/2025/11/31/numpy-basics-4.html)
-- [Python Basics – 5](jekyll/python/2025/11/31/numpy-basics-5.html)
-- [Python Basics – 6](jekyll/python/2025/11/31/numpy-basics-6.html)
-- [Python Basics – 7](jekyll/python/2025/11/31/numpy-basics-7.html)
-- [Python Basics – 8](jekyll/python/2025/11/31/numpy-basics-8.html)
-- [Python Basics – 9](jekyll/python/2025/11/31/numpy-basics-9.html)
-- [Python Basics – 11](jekyll/python/2025/11/31/numpy-basics-11.html)
-- **[Python Basics (all)](jekyll/python/2025/11/31/numpy-basics-all.html)** -->
+- [Python Basics – 1](python/2025/11/31/numpy-basics-1.html)
+- [Python Basics – 2](python/2025/11/31/numpy-basics-2.html)
+- [Python Basics – 3](python/2025/11/31/numpy-basics-3.html)
+- [Python Basics – 4](python/2025/11/31/numpy-basics-4.html)
+- [Python Basics – 5](python/2025/11/31/numpy-basics-5.html)
+- [Python Basics – 6](python/2025/11/31/numpy-basics-6.html)
+- [Python Basics – 7](python/2025/11/31/numpy-basics-7.html)
+- [Python Basics – 8](python/2025/11/31/numpy-basics-8.html)
+- [Python Basics – 9](python/2025/11/31/numpy-basics-9.html)
+- [Python Basics – 11](python/2025/11/31/numpy-basics-11.html)
+- **[Python Basics (all)](python/2025/11/31/numpy-basics-all.html)** -->
 
 ## NumPy
-- [NumPy Basics – 1](jekyll/numpy/2025/11/31/numpy-basics-1.html)
+- [NumPy Basics – 1](numpy/2025/11/31/numpy-basics-1.html)
 
-<!-- - [NumPy Basics – 2](jekyll/numpy/2025/11/31/numpy-basics-2.html)
-- [NumPy Basics – 3](jekyll/numpy/2025/11/31/numpy-basics-3.html)
-- [NumPy Basics – 4](jekyll/numpy/2025/11/31/numpy-basics-4.html)
-- [NumPy Basics – 5](jekyll/numpy/2025/11/31/numpy-basics-5.html)
-- [NumPy Basics – 6](jekyll/numpy/2025/11/31/numpy-basics-6.html)
-- [NumPy Basics – 7](jekyll/numpy/2025/11/31/numpy-basics-7.html)
-- [NumPy Basics – 8](jekyll/numpy/2025/11/31/numpy-basics-8.html) -->
+<!-- - [NumPy Basics – 2](numpy/2025/11/31/numpy-basics-2.html)
+- [NumPy Basics – 3](numpy/2025/11/31/numpy-basics-3.html)
+- [NumPy Basics – 4](numpy/2025/11/31/numpy-basics-4.html)
+- [NumPy Basics – 5](numpy/2025/11/31/numpy-basics-5.html)
+- [NumPy Basics – 6](numpy/2025/11/31/numpy-basics-6.html)
+- [NumPy Basics – 7](numpy/2025/11/31/numpy-basics-7.html)
+- [NumPy Basics – 8](numpy/2025/11/31/numpy-basics-8.html) -->
 
 ## NumPy
-1. [Introducting Numpy](jekyll/numpy/2025/11/02/introducing-numpy.html)
-2. [Creating Arrays](jekyll/numpy/2025/11/02/creating-arrays.html)
-3. [Indexing Arrays](jekyll/numpy/2025/11/03/indexing-arrays.html)
-4. [Slicing Arrays](jekyll/numpy/2025/11/03/slicing-arrays.html)
-5. [Array Manipulation](jekyll/numpy/2025/11/03/array-manipulation.html)
-6. [Broadcasting Arrays](jekyll/numpy/2025/11/03/array-broadcasting.html)
+1. [Introducting Numpy](numpy/2025/11/02/introducing-numpy.html)
+2. [Creating Arrays – NumPy](numpy/2025/11/02/creating-arrays.html)
+3. [Key Array Attributes – NumPy](numpy/2025/11/03/array-attributes.html)
+4. [Indexing Arrays – NumPy](numpy/2025/11/03/indexing-arrays.html)
+5. [Slicing Arrays – NumPy](numpy/2025/11/03/slicing-arrays.html)
+6. [Array Manipulation – NumPy](numpy/2025/11/03/array-manipulation.html)
+7. [Broadcasting Arrays – NumPy](numpy/2025/11/03/array-broadcasting.html)

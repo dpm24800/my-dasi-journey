@@ -2,7 +2,7 @@
 layout: post
 title:  "Introducing NumPy"
 date:   2025-11-02 10:12:45 +0545
-categories: jekyll numpy
+categories: numpy
 ---
 ## What is NumPy?
 - NumPy (Numerical Python) is a foundational open-source Python library 

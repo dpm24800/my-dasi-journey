@@ -2,7 +2,7 @@
 layout: post
 title:  "Iterating over Array – NumPy"
 date:   2025-11-02 20:40:45 +0545
-categories: jekyll numpy
+categories: numpy
 ---
 ## Table of Contents
 

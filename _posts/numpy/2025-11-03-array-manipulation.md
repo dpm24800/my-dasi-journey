@@ -2,9 +2,10 @@
 layout: post
 title: "Array Manipulation – NumPy"
 date: 2025-11-03 05:12:45 +0545
-categories: jekyll numpy
+categories: numpy
 ---
 ## Table of Contents
+- [Table of Contents](#table-of-contents)
 - [Reshaping Array: Changing Array Shape](#reshaping-array-changing-array-shape)
   - [Reshaping to 2-D](#reshaping-to-2-d)
   - [Reshaping to 3-D](#reshaping-to-3-d)

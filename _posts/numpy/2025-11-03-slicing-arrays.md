@@ -2,7 +2,7 @@
 layout: post
 title:  "Slicing Arrays – NumPy"
 date:   2025-11-03 21:12:45 +0545
-categories: jekyll numpy
+categories: numpy
 ---
 ## Array Slicing/Subsetting
 Just like lists in Python, NumPy arrays can be indexed and sliced to extract specific elements or subsets of data.

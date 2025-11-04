@@ -2,7 +2,7 @@
 layout: post
 title:  "Creating Arrays – NumPy"
 date:   2025-11-02 20:40:45 +0545
-categories: jekyll numpy
+categories: numpy
 ---
 **Table of Contents**
 - [1. From Python (Data) Structures ✅](#1-from-python-data-structures-)

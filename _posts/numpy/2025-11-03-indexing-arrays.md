@@ -2,7 +2,7 @@
 layout: post
 title:  "Indexing Arrays – NumPy"
 date:   2025-11-03 12:12:45 +0545
-categories: jekyll numpy
+categories: numpy
 ---
 Accessing an array elements is called indexing. 
 Just like lists in Python, NumPy arrays can be indexed and sliced to extract specific elements or subsets of data.
