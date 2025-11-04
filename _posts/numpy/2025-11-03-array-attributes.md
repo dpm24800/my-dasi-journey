@@ -15,12 +15,14 @@ categories: numpy
     - [2. Two Dimensional (2-D) Array](#2-two-dimensional-2-d-array)
     - [3. Three Dimensional (3-D) Array](#3-three-dimensional-3-d-array)
 - [Array Data Type (array.dtype)](#array-data-type-arraydtype)
-- [Array Itemsize (array.itemsize)](#array-itemsize-arrayitemsize)
-- [Array nytes (array.nbytes)](#array-nytes-arraynbytes)
-- [Array Data (array.data)](#array-data-arraydata)
  
 ---
-&nbsp;  
+&nbsp;
+<center>
+    <!-- ![numpy-logo](../../../../assets/numpy-logo.png) -->
+    <img src="../../../../assets/numpy-logo.png">
+</center>
+
 Here are key/important attributes/properties of an ndarray object:
 - `array.ndim` – the number of dimensions (axes) of the array.
 - `array.shape` – dimensions of the array; A tuple of integers indicating the size of the array in each dimension (e.g., `(rows, columns)`).
@@ -30,10 +32,10 @@ Here are key/important attributes/properties of an ndarray object:
 - `array.nbytes` – total memory consumed // total size in bytes (`.size * .itemsize`)
 - `array.data`: 
 
-- **Data Types (`dtype`)**
+<!-- - **Data Types (`dtype`)**
  - Importance of `dtype` for memory and precision.
     - Common types: `int8/16/32/64`, `uint8/16/32/64`, `float16/32/64`, `complex64/128`, `bool_`, `object_`, `string_`.
-    - Specifying and converting dtypes: `dtype` parameter, `.astype()` method.
+    - Specifying and converting dtypes: `dtype` parameter, `.astype()` method. -->
 
 If you have not read this post yet, please consider reading this post - [Array Creation](#), as current post builds upon [Array Creation](#).
 
@@ -333,7 +335,7 @@ arrStr.dtype: <U5
 arrBool.dtype: bool 
  [ True False False  True False  True] 
 ```
-
+<!-- 
 ## Array Itemsize (array.itemsize) 
 - `array.itemsize` – size of each element (in bytes)
 
@@ -344,4 +346,4 @@ The **`array.nbytes`** attribute returns the total memory consumed // total size
 ## Array Data (array.data) 
 
 -  – 
-- `array.data`: 
+- `array.data`:  -->

@@ -80,10 +80,10 @@ The more important attributes of an ndarray object are:
 - `array.nbytes` – total memory consumed // total size in bytes (`.size * .itemsize`)
 - `array.data`: 
 
-- **Data Types (`dtype`)**
+<!-- - **Data Types (`dtype`)**
  - Importance of `dtype` for memory and precision.
     - Common types: `int8/16/32/64`, `uint8/16/32/64`, `float16/32/64`, `complex64/128`, `bool_`, `object_`, `string_`.
-    - Specifying and converting dtypes: `dtype` parameter, `.astype()` method.
+    - Specifying and converting dtypes: `dtype` parameter, `.astype()` method. -->
 
 ## Array Indexing
 - **Basic Indexing**: Indexing in 1D, 2D, and nD Arrays
@@ -258,7 +258,7 @@ The more important attributes of an ndarray object are:
 - **Reshaping**: Changing Array Shape
     - `arr.reshape(new_shape)`: Changes the shape of an array without changing its data.
     - `arr.ravel()` or `arr.flatten()`: Flattens/converts a multi-dimensional array into a 1D array. [`arr.ravel()` (1D view), `arr.flatten()` (1D copy).]
-- **Transposing**:  ✅
+- **Transposing**:  [done]
       - `arr.T` or `np.transpose(arr)`: Swaps the rows and columns (or permutes dimensions for N-D arrays).
 - **Arrays Concatenation and Stacking**:
   - `np.concatenate((arr1, arr2), axis=0/1)`: Joins a sequence of arrays along an existing axis.
@@ -297,7 +297,7 @@ The more important attributes of an ndarray object are:
 - dsfs
 - dfsdf
 
-## 🧰 8. Array Manipulation and Utilities
+## 8. Array Manipulation and Utilities
 - `np.unique()` – unique elements
 - `np.clip()` – limit values within a range
 - `np.any()`: logical checks
