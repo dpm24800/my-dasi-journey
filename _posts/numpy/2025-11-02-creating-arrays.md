@@ -24,8 +24,6 @@ categories: numpy
 - [4. Linearly spaced values: np.linspace() ✅](#4-linearly-spaced-values-nplinspace-)
 
 ---
-
-&nbsp;
 <center>
 <!-- ![numpy-logo](../../../../assets/numpy-logo.png) -->
 <img src="../../../../assets/numpy-logo.png">

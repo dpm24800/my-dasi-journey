@@ -10,6 +10,18 @@
   position: relative;
 }
 
+
+// @Dpm
+a.site-title{ 
+  color: #9b9898;
+  font-weight: 300;
+  letter-spacing: 1.25px;
+}
+
+a.site-title:hover{
+  text-decoration: none;
+}
+
 .site-title {
   @include relative-font-size(1.625);
   font-weight: 300;
@@ -20,7 +32,7 @@
 
   &,
   &:visited {
-    color: $grey-color-dark;
+    color: grey-color-dark; // $brey-color
   }
 }
 

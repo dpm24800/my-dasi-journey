@@ -33,3 +33,23 @@
   </div>
 
 </footer>
+
+
+<button id="back-to-top" title="Back to Top">↑</button> 
+
+<script>
+  // Show the button when user scrolls down 100px
+  window.onscroll = function() {
+    const btn = document.getElementById("back-to-top");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      btn.style.display = "block";
+    } else {
+      btn.style.display = "none";
+    }
+  };
+
+  // Smooth scroll to top
+  document.getElementById("back-to-top").addEventListener("click", function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>

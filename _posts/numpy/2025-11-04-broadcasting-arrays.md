@@ -4,7 +4,6 @@ title:  "Broadcasting Arrays – NumPy"
 date:   2025-11-05 12:12:45 +0545
 categories: numpy
 ---
-&nbsp;
 <center>
 <!-- ![numpy-logo](../../../../assets/numpy-logo.png) -->
 <img src="../../../../assets/numpy-logo.png">

@@ -7,6 +7,7 @@ permalink: /about/
 Welcome to **My DS/AI Journey**
 
 This blog is my personal space to document and share everything I learn on my path to becoming a **Data Scientist** and **Machine Learning Engineer**.  
+
 Here, I explore concepts, experiments, and projects related to **Data Science**, **Machine Learning**, and **Artificial Intelligence** — from foundational math and Python programming to building real-world models and understanding modern AI systems.
 
 ### Why I Started This Blog

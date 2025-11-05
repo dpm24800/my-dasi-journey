@@ -10,13 +10,14 @@ $base-line-height: 1.5 !default;
 
 $spacing-unit:     30px !default;
 
-$text-color:       #111 !default;
-$background-color: #fdfdfd !default;
-$brand-color:      #2a7ae2 !default;
+$text-color:       #cdc3c3 !default;          //#f1f1f1
+$background-color: #232323 !default;          //#272b38
+$brand-color:      #57b2d3 !default;          // #2a7ae2
 
-$grey-color:       #828282 !default;
-$grey-color-light: lighten($grey-color, 40%) !default;
-$grey-color-dark:  darken($grey-color, 25%) !default;
+$grey-color:       #9c9d9a !default; /* My DS/AI */
+$grey-color-light: lighten($grey-color, 5%) !default;
+$grey-color-dark:  darken($grey-color, 25%) !default; // 25%
+$brey-color:       #383838;
 
 $table-text-align: left !default;
 
@@ -47,5 +48,6 @@ $on-laptop:        800px !default;
 @import
   "minima/base",
   "minima/layout",
-  "minima/syntax-highlighting"
+  "minima/syntax-highlighting",
+  "minima/custom"
 ;
