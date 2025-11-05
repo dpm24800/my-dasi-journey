@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Dhamma
+title: Reflections
 date: 2025-11-01 21:12:45 +0545
-nav_order: 2   # smaller number = appears earlier
-# permalink: /dhamma/
+nav_order: 3   # smaller number = appears earlier
+# permalink: /categories/
 ---
 <!-- ## Python
 - [Python Basics – 1](python/2025/11/31/numpy-basics-1.html)

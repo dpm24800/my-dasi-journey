@@ -4,6 +4,25 @@
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 </script>
 ```
+## _incluses/header.html
+```
+<div class="trigger">
+  {%- for path in page_paths -%} -->
+    {%- assign sorted_pages = site.pages | sort: "nav_order" -%}
+    {%- for my_page in sorted_pages -%}
+      {%- assign my_page = site.pages | where: "path", path | first -%}
+      {%- if my_page.title -%}
+      <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+      {%- endif -%}
+  {%- endfor -%}
+</div>
+```
+
+```
+
+```
+
+it was replaced with another trigger div for custom page list
 
 ## _includes/footer.html
 ```html
@@ -29,3 +48,6 @@
 
 ## _config.yml
 - theme: null
+
+
+

@@ -47,3 +47,17 @@ theme: null # disabled here to customize
 plugins:
  - jekyll-feed
  - jekyll-seo-tag
+
+
+null:
+  nav_links:
+      - title: "Data Science and AI"
+        url: /dsai/
+      - title: "Dhamma"
+        url: /dhamma/
+      - title: "Reflections"
+        url: /reflections/
+      - title: "Misc."
+        url: /misc/
+      - title: "About"
+        url: /about/
