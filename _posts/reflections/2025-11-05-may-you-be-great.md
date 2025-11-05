@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "ठूलो मान्छे बन्नू"
-categories: misc
+categories: reflections
 ---
 
 

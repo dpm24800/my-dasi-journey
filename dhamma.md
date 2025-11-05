@@ -2,7 +2,7 @@
 layout: page
 title: Dhamma
 date: 2025-11-01 21:12:45 +0545
-nav_order: 2   # smaller number = appears earlier
+nav_order: 2
 # permalink: /dhamma/
 ---
 <!-- ## Python
@@ -18,7 +18,7 @@ nav_order: 2   # smaller number = appears earlier
 - [Python Basics – 11](python/2025/11/31/numpy-basics-11.html)
 - **[Python Basics (all)](python/2025/11/31/numpy-basics-all.html)** -->
 
-- [NumPy Basics – 1](numpy/2025/11/31/numpy-basics-1.html)
+<!-- - [NumPy Basics – 1](numpy/2025/11/31/numpy-basics-1.html)
 
 ## NumPy
 1. [Introducting Numpy](numpy/2025/11/02/introducing-numpy.html)
@@ -29,4 +29,4 @@ nav_order: 2   # smaller number = appears earlier
 6. [Iterating (over) Array – NumPy](numpy/2025/11/03/iterating-arrays.html)
 7. [Array Manipulation – NumPy](numpy/2025/11/03/array-manipulation.html)
 8. [Broadcasting Arrays – NumPy](numpy/2025/11/05/broadcasting-arrays.html)
-8. [Array Operations – NumPy](numpy/2025/11/04/broadcasting-arrays.html)
+8. [Array Operations – NumPy](numpy/2025/11/04/broadcasting-arrays.html) -->
