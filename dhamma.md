@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Categories
+title: Dhamma
 date: 2025-11-01 21:12:45 +0545
-# permalink: /categories/
+# permalink: /dhamma/
 ---
 <!-- ## Python
 - [Python Basics – 1](python/2025/11/31/numpy-basics-1.html)
