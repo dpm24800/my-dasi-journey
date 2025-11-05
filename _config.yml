@@ -7,12 +7,11 @@ description: > # this means to ignore newlines until "twitter_username:"
 # social links
 linkedin_username: dpm24800
 github_username:  dpm24800
+instagram_username: dpm.it24800
+facebook_username: dpm.dh24800
 # rss: rss
 # dribbble_username: jekyll
-# facebook_username: jekyll
 # flickr_username: jekyll
-# instagram_username: jekyll
-# linkedin_username: jekyll
 # pinterest_username: jekyll
 # youtube_username: jekyll
 # googleplus_username: +jekyll
@@ -24,7 +23,7 @@ github_username:  dpm24800
 # - username: jekyll2
 #   instance: example.com
 
-show_excerpts: false # set to true to show excerpts on the homepage
+show_excerpts: true # set to true to show excerpts on the homepage
 
 # Minima date format
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
