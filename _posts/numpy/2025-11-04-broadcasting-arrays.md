@@ -4,20 +4,20 @@ title:  "Broadcasting Arrays – NumPy"
 date:   2025-11-04 10:12:45 +0545
 categories: numpy
 ---
+**Table of Contents**:
+- [NumPy Array Broadcasting: Vectorizing Operations Efficiently](#numpy-array-broadcasting-vectorizing-operations-efficiently)
+- []
 
-## Broadcasting Arrays
-- Concept and rules of broadcasting
-- Examples of compatible and incompatible shapes
-- Broadcasting in arithmetic and aggregation
-- A set of rules that allows NumPy to work with arrays of different shapes when performing arithmetic operations.
-- Understanding the rules for how a smaller array is "stretched" to match the shape of a larger array.
--   **The Rule:** Arrays can be operated on if their dimensions are compatible.
-    -   **Rules:** 1) Trailing dimensions equal, or 2) One of them is 1.
-    -   Examples: Adding a 1D array to a 2D array, scalar with an array.
-    -   Using `np.newaxis`/`None` to reshape arrays for broadcasting.
+
+Broadcasting rules
+
+
+
+## NumPy Array Broadcasting: Vectorizing Operations Efficiently
 
 **Broadcasting**
-Broadcasting allows NumPy to perform operations on arrays of different shapes. This is useful when you need to perform operations between arrays with different dimensions.
+- Broadcasting allows NumPy to perform operations on arrays of different shapes. 
+- This is useful when you need to perform operations between arrays with different dimensions.
 
 Example
 
@@ -32,14 +32,14 @@ Output,
 ```
 [11 12 13]
 ```
-    
-
 ---
 
 - Broadcasting in NumPy is a powerful mechanism that allows arithmetic operations on arrays with different shapes by virtually **stretching the smaller array to match the shape of the larger one without making a copy of the data**. 
 - This happens under specific rules: 
   - when comparing dimensions from right to left, they must either be equal, or one of them must be 1. 
 - Broadcasting avoids the need for explicit Python loops, leading to more efficient code. 
+
+
 
 ### How broadcasting works
 1. **Padding with ones**: If arrays have different numbers of dimensions, the one with fewer dimensions is "padded" with ones on its left side to match the number of dimensions of the larger array.
@@ -56,24 +56,7 @@ Output,
 - **Memory efficiency**: While often efficient, broadcasting can sometimes create very large intermediate arrays, making an algorithm inefficient in memory. 
 - **Complexity**: As the number of dimensions increases, the logic of broadcasting can become difficult to interpret, potentially leading to unintended results. 
 
-
-## References
-- [Broadcasting](https://numpy.org/doc/stable/user/basics.broadcasting.html)
-- [NumPy Array Broadcasting](https://www.geeksforgeeks.org/numpy/numpy-array-broadcasting/)
-
-**YouTube**:
-- [Learn Broadcasting In Numpy Arrays - Machine Learning Tutorial
-](https://www.youtube.com/watch?v=mQd6UnJ4cTY)
-- [Broadcasting | Begin your AI Journey with NumPy
-](https://www.youtube.com/watch?v=EcxldDbZv10)
-
-**Google Search**:
-- [What is broadcasting in numpy- Google Search](https://www.google.com/search?q=what+is+broadcasting+in+numpy&rlz=1C1ONGR_enNP1174NP1174&oq=what+is+broadcs&gs_lcrp=EgZjaHJvbWUqCQgBEAAYDRiABDIGCAAQRRg5MgkIARAAGA0YgAQyCQgCEAAYDRiABDIJCAMQABgNGIAEMgkIBBAAGA0YgAQyCQgFEAAYDRiABDIJCAYQABgNGIAEMgkIBxAAGA0YgAQyCQgIEAAYDRiABDIJCAkQABgNGIAE0gEINjE2MWowajeoAgCwAgA&sourceid=chrome&ie=UTF-8)
-
---- 
-## 🎛️ NumPy Array Broadcasting: Vectorizing Operations Efficiently
-
-
+---
 
 - **Broadcasting** is a fundamental feature in **NumPy** that allows arithmetic operations (like addition, subtraction, multiplication, etc.) to be performed on arrays of different shapes and sizes. 
 - It's a mechanism that enables element-wise operations without requiring the arrays to have exactly the same shape, which is a key to **vectorization** and highly efficient, concise code.
@@ -163,9 +146,7 @@ result = A + B_reshaped
 -----
 
 ### 🚀 Benefits and Applications
-
 Broadcasting is vital in data science and numerical computing for several reasons:
-
   * **Efficiency and Speed (Vectorization):** It allows array operations to be executed in optimized, pre-compiled C code underneath the NumPy hood, avoiding slow Python loops.
   * **Memory Optimization:** It achieves the dimensional compatibility without creating physical copies of the smaller array, saving significant memory, especially for large datasets.
   * **Code Simplicity:** It makes code cleaner and more readable by eliminating explicit iteration or complex reshaping logic.
@@ -182,3 +163,31 @@ You can check out a quick visual explanation of NumPy broadcasting in this video
 
 http://googleusercontent.com/youtube_content/0
 
+
+
+
+
+## References
+- [Broadcasting](https://numpy.org/doc/stable/user/basics.broadcasting.html)
+- [NumPy Array Broadcasting](https://www.geeksforgeeks.org/numpy/numpy-array-broadcasting/)
+
+**YouTube**:
+- [Learn Broadcasting In Numpy Arrays - Machine Learning Tutorial
+](https://www.youtube.com/watch?v=mQd6UnJ4cTY)
+- [Broadcasting | Begin your AI Journey with NumPy
+](https://www.youtube.com/watch?v=EcxldDbZv10)
+
+**Google Search**:
+- [What is broadcasting in numpy- Google Search](https://www.google.com/search?q=what+is+broadcasting+in+numpy&rlz=1C1ONGR_enNP1174NP1174&oq=what+is+broadcs&gs_lcrp=EgZjaHJvbWUqCQgBEAAYDRiABDIGCAAQRRg5MgkIARAAGA0YgAQyCQgCEAAYDRiABDIJCAMQABgNGIAEMgkIBBAAGA0YgAQyCQgFEAAYDRiABDIJCAYQABgNGIAEMgkIBxAAGA0YgAQyCQgIEAAYDRiABDIJCAkQABgNGIAE0gEINjE2MWowajeoAgCwAgA&sourceid=chrome&ie=UTF-8)
+
+
+# Topics
+- Concept and rules of broadcasting
+- Examples of compatible and incompatible shapes
+- Broadcasting in arithmetic and aggregation
+- A set of rules that allows NumPy to work with arrays of different shapes when performing arithmetic operations.
+- Understanding the rules for how a smaller array is "stretched" to match the shape of a larger array.
+-   **The Rule:** Arrays can be operated on if their dimensions are compatible.
+    -   **Rules:** 1) Trailing dimensions equal, or 2) One of them is 1.
+    -   Examples: Adding a 1D array to a 2D array, scalar with an array.
+    -   Using `np.newaxis`/`None` to reshape arrays for broadcasting.

@@ -110,7 +110,7 @@ Array Size:  12
 #### 2. Two Dimensional (2-D) Array
 - 2-D Array: A table with rows and columns, like a matrix is a two-dimensional (2-D) array.
   
-**Example 1**: ✅
+**Example 1**:
 ```python
 # 2-D array of 4 rows and 3 columns
 # arr2d = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9], [10, 11, 12]])
