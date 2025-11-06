@@ -1,3 +1,12 @@
+---
+layout: post
+title: "Array Manipulation – NumPy"
+date: 2025-11-06 05:12:45 +0545
+author: Dipak Pulami Magar
+categories: numpy
+status: draft
+---
+
 ## Random Arrays
 - Random Module in NumPy (`numpy.random`)
 - Functions for generating random numbers from Random Module
