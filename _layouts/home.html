@@ -23,13 +23,13 @@ layout: default
       {% assign visible_posts = site.posts %}
     {% endif %}
 
-    <ul class="post-list" style="border: 1px solid greenyellow;">
+    <ul class="post-list">
       {%- for post in visible_posts -%}
-      <li style="border: 0px solid red; display: flex; flex-direction: row;">
+      <li>
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <span class="post-meta" style="border:1px solid red;">{{ post.date | date: date_format }}</span>
+        <span class="post-meta">{{ post.date | date: date_format }}</span>
 
-        <h3 style="border: 1px solid red; width:750px">
+        <h3>
           <a class="post-link" href="{{ post.url | relative_url }}" >
             {{ post.title | escape }}
           </a>

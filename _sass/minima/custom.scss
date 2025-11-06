@@ -42,3 +42,21 @@ hr{
   color: #dbf01a;
   // border: 1px solid #fcd34d;
 }
+
+
+// status: draft
+.post-list{
+	border: 0px solid greenyellow;
+	li{
+		border: 0px solid red; display: flex; flex-direction: row;
+		span.post-meta{
+			border:0px solid red; width: 60px
+		}
+		h3{
+			border: 0px solid red; width: 680px;
+		}
+    .post-status{
+      border: 0px solid red; padding-top: 5px; max-height: 30px;
+    }
+	}
+}
