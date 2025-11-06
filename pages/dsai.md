@@ -10,7 +10,7 @@ permalink: /dsai/
 - [NumPy Basics – 1](../numpy/2025/11/31/numpy-basics-1.html)
 
 ## NumPy
-1. [Introducting Numpy](../../numpy/2025/11/02/introducing-numpy.html)
+1. [Introducting Numpy](../numpy/2025/11/02/introducing-numpy.html)
 2. [Creating Arrays – NumPy](../numpy/2025/11/02/creating-arrays.html)
 3. [Array Attributes – NumPy](../numpy/2025/11/03/array-attributes.html)
 4. [Indexing Arrays – NumPy](../numpy/2025/11/03/indexing-arrays.html)
