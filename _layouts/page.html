@@ -8,6 +8,12 @@ layout: default
   </header>
 
   <div class="post-content">
+    <!-- {% if page.status == "draft" %}
+      <span class="post-status draft">Draft</span>
+    {% elsif page.status == "published" %}
+      <span class="post-status published">Published</span>
+    {% endif %} -->
+
     {{ content }}
   </div>
 

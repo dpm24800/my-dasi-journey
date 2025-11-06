@@ -1,0 +1,25 @@
+.post-status {
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: 6px;
+  padding: 2px 8px;
+  margin-left: 10px;
+}
+
+.post-status.draft {
+  background: #fef3c7;
+  color: #92400e;
+  border: 1px solid #fcd34d;
+}
+
+.post-status.published {
+  background: #dcfce7;
+  color: #166534;
+  border: 1px solid #86efac;
+}
+
+.post-status {
+  background: #fef3c7;
+  color: #92400e;
+  border: 1px solid #fcd34d;
+}

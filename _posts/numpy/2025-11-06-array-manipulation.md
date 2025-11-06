@@ -2,9 +2,10 @@
 layout: post
 title: "Array Manipulation – NumPy"
 date: 2025-11-06 05:12:45 +0545
+author: Dipak Pulami Magar
 categories: numpy
 ---
-## Table of Contents
+<!-- ## Table of Contents
 - [Table of Contents](#table-of-contents)
 - [Reshaping Array: Changing Array Shape](#reshaping-array-changing-array-shape)
   - [Reshaping to 2-D](#reshaping-to-2-d)
@@ -12,7 +13,12 @@ categories: numpy
   - [arr.reshape() returns a new view](#arrreshape-returns-a-new-view)
 - [Transposing an Array](#transposing-an-array)
   - [Transposing 2-D Array](#transposing-2-d-array)
-    - [Transposing 3-D Array](#transposing-3-d-array)
+    - [Transposing 3-D Array](#transposing-3-d-array) -->
+
+<center>
+<!-- ![numpy-logo](../../../../assets/numpy-logo.png) -->
+<img src="../../../../assets/numpy-logo.png">
+</center>
 
 ## Reshaping Array: Changing Array Shape
 Reshaping an array means changing its dimension. NumPy provides `np.reshape()` function to reshape or change the dimensions of an array.

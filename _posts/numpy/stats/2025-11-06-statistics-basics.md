@@ -3,6 +3,7 @@ layout: post
 title:  "Statistics Basics"
 date:   2025-11-06 5:12:45 +0545
 categories: numpy stats
+status: draft
 ---
 
 # 📘 Part 1: Mean — Mathematical Concept and NumPy Implementation
