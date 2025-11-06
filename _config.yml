@@ -43,8 +43,8 @@ minima:
 theme: null # disabled here to customize 
 
 plugins:
- - jekyll-feed
  - jekyll-seo-tag
+#  - jekyll-feed
 
 
 null:

@@ -4,6 +4,9 @@
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 </script>
 ```
+
+---
+
 ## _incluses/header.html
 ```
 <div class="trigger">
@@ -17,8 +20,7 @@
   {%- endfor -%}
 </div>
 ```
-
-```
+---
 
 ```
 
@@ -45,9 +47,7 @@ it was replaced with another trigger div for custom page list
 ```
 
 ## _sass/minima/custom.scss
+## assets/css/syntax.css
 
 ## _config.yml
 - theme: null
-
-
-

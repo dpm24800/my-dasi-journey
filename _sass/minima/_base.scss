@@ -127,11 +127,11 @@ a {
  * Blockquotes
  */
 blockquote {
-  color: lighten($grey-color, 5%); //$grey-color
+  color: #82a04f; //$grey-color lighten($grey-color, 5%)
   border-left: 4px solid $grey-color-light;
   padding-left: $spacing-unit * 0.5;
   @include relative-font-size(1.125);
-  letter-spacing: -1px;
+  letter-spacing: -0.9px;
   font-style: italic;
 
   > :last-child {
@@ -232,21 +232,21 @@ table {
   text-align: $table-text-align;
   color: lighten($text-color, 18%);
   border-collapse: collapse;
-  border: 1px solid $brey-color;
+  border: 0.3px solid $brey-color;
   tr {
     &:nth-child(even) {
-      background-color: lighten($brey-color, 6%);
+      background-color: #50514f33 // lighten($brey-color, 3%);
     }
   }
   th, td {
     padding: ($spacing-unit * 0.3333333333) ($spacing-unit * 0.5);
   }
   th {
-    background-color: lighten($brey-color, 3%);
-    border: 1px solid darken($brey-color, 4%);
+    background-color: #5a5b59af; // lighten($brey-color, 3%);
+    // border: 1px solid darken($brey-color, 4%);
     border-bottom-color: darken($brey-color, 12%);
   }
   td {
-    border: 1px solid $brey-color;
+    border: 0.3px solid $brey-color;
   }
 }
