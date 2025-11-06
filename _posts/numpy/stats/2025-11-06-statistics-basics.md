@@ -4,23 +4,6 @@ title:  "Statistics Basics"
 date:   2025-11-06 5:12:45 +0545
 categories: numpy stats
 ---
-Excellent — let’s turn this into a **structured series** of detailed articles, one for each concept:
-
-- 1️⃣ Mean
-- 2️⃣ Median
-- 3️⃣ Mode
-- 4️⃣ Standard Deviation
-- 5️⃣ Covariance
-- 6️⃣ Correlation
-
-Each article will have **two major sections**:
-
-* **Mathematical Concept** — with definitions, formulas, intuition, and examples.
-* **NumPy Function** — explaining how to compute it programmatically with examples and interpretation.
-
-Let’s begin the series below with **Part 1: Mean**, and I’ll continue the rest one by one afterward.
-
----
 
 # 📘 Part 1: Mean — Mathematical Concept and NumPy Implementation
 
@@ -37,64 +20,51 @@ $$
 $$
 
 Where:
-
-* (x_i) = individual data points
-* (n) = total number of observations
+- $$x_i$$ = individual data points  
+- $$n$$ = total number of observations
 
 It’s simply the **sum of all observations divided by the number of observations**.
 
----
-
 ### 2. Intuitive Understanding
-
 Think of mean as the **balancing point** of your data.
 If each data point were a weight on a scale, the mean is where the scale would balance perfectly.
 
 However, it’s **sensitive to extreme values (outliers)** — one unusually high or low number can pull the mean significantly in its direction.
 
----
 
 ### 3. Example
-
 Dataset: [2, 4, 6, 8, 10]
 
-[
+$$
 \bar{x} = \frac{2 + 4 + 6 + 8 + 10}{5} = 6
-]
+$$
 
 So, the **mean** is **6**, representing the center of these values.
 
----
-
 ### 4. Types of Mean
-
 There are multiple types of means used in different contexts:
 
 | Type            | Formula                           | Use Case                              |
 | --------------- | --------------------------------- | ------------------------------------- |
-| Arithmetic Mean | ( \frac{\sum x_i}{n} )            | General average                       |
-| Weighted Mean   | ( \frac{\sum w_i x_i}{\sum w_i} ) | When values have different importance |
-| Geometric Mean  | ( (\prod x_i)^{1/n} )             | For growth rates, ratios              |
-| Harmonic Mean   | ( \frac{n}{\sum \frac{1}{x_i}} )  | For rates and ratios (e.g., speed)    |
+| Arithmetic Mean | $$ \frac{\sum x_i}{n} $$            | General average                       |
+| Weighted Mean   | $$ \frac{\sum w_i x_i}{\sum w_i} $$ | When values have different importance |
+| Geometric Mean  | $$ (\prod x_i)^{1/n} $$             | For growth rates, ratios              |
+| Harmonic Mean   | $$ \frac{n}{\sum \frac{1}{x_i}} $$  | For rates and ratios (e.g., speed)    |
 
 For this article, we focus on the **arithmetic mean**, as it’s most common in statistical analysis.
-
----
 
 ### 5. Mathematical Properties
 
 1. **Sum of deviations** from the mean is always **zero**:
-   [
+   $$
    \sum (x_i - \bar{x}) = 0
-   ]
+   $$
 2. **Mean minimizes squared deviations**:
    The arithmetic mean is the point where the sum of squared deviations is smallest — the foundation of **least squares regression**.
 3. **Linear transformation** property:
-   [
+   $$
    \text{If } y = a + bx, \text{ then } \bar{y} = a + b\bar{x}
-   ]
-
----
+   $$
 
 ## 💻 NumPy Function for Mean
 
@@ -134,8 +104,6 @@ print("Mean:", mean_value)
 Mean: 6.0
 ```
 
----
-
 ### 4. Example 2: Mean Along an Axis
 
 ```python
@@ -156,8 +124,6 @@ print("Column-wise mean:", mean_col)
 Row-wise mean: [2. 5. 8.]
 Column-wise mean: [4. 5. 6.]
 ```
-
----
 
 ### 5. Example 3: Weighted Mean (Manual)
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Array Manipulation – NumPy"
-date: 2025-11-03 05:12:45 +0545
+date: 2025-11-06 05:12:45 +0545
 categories: numpy
 ---
 ## Table of Contents
@@ -395,7 +395,7 @@ Transposed Array Shape: (5, 4, 3)
 ```
 
 
-- **Arrays Concatenation and Stacking**:
+<!-- - **Arrays Concatenation and Stacking**:
   - `np.concatenate((arr1, arr2), axis=0/1)`: Joins a sequence of arrays along an existing axis.
   - 
 - **Stacking helpers**:
@@ -409,4 +409,4 @@ Transposed Array Shape: (5, 4, 3)
     - `np.split()`: Split an array into multiple smaller arrays
     - `np.hsplit()`: 
     - `np.vsplit()`: 
-    - `np.array_split()`: (allows uneven splits).
+    - `np.array_split()`: (allows uneven splits). -->
