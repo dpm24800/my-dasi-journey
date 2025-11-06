@@ -2,7 +2,7 @@
 layout: page
 title: About
 date: 2025-11-30 21:12:45 +0545
-nav_order: 5   # smaller number = appears earlier
+nav_order: 5
 permalink: /about/
 ---
 
@@ -12,16 +12,12 @@ This blog is my personal space to document and share everything I learn on my pa
 
 Here, I explore both the **outer world of data** and the **inner world of awareness** — connecting logic with reflection, code with clarity, and technology with wisdom.
 
----
-
 ## Why I Started This Blog
 
 I believe that learning becomes more meaningful when shared.
 Writing about what I study not only deepens my understanding but also helps others walking a similar path — whether it’s in **Data Science** or in **self-understanding through Dhamma**.
 
 This site serves as a **public learning and reflection journal** — a place to organize my notes, record experiments, and write about insights from both data and daily life.
-
----
 
 ## What You’ll Find Here
 
@@ -31,15 +27,12 @@ This site serves as a **public learning and reflection journal** — a place to 
 * **Reflections** on challenges, discipline, and learning from mistakes
 * Writings inspired by **Dhamma**, **mindfulness**, and **life experiences**
 
----
-
 ## My Goal
 
 To build a strong foundation in **Data Science and Machine Learning**, and eventually contribute to meaningful **AI solutions** — while cultivating **clarity of mind, compassion, and consistency** in daily life.
 
 I see this journey not just as a technical pursuit, but as a **practice of understanding reality** — through data and through Dhamma.
 
----
 
 ## Let’s Connect
 
