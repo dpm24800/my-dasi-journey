@@ -2,9 +2,9 @@
 layout: post
 author: Ajahn Ñāṇamoli Thero
 title:  The Meaning of Emptiness
-date:   2025-11-07 1:12:45 +0545
+date:   2025-11-06 1:12:45 +0545
 categories: dhamma hh
-status: draft
+status: published
 ---
 
 (Talk no.60hh - edited transcript)
