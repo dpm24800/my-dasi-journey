@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Data Science & AI
+title: DS & AI
 date: 2025-11-01 21:12:45 +0545
 nav_order: 1   # smaller number = appears earlier
 permalink: /dsai/

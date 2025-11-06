@@ -1,9 +1,10 @@
 ---
 layout: page
-title: Misc.
+title: Misx.
 date: 2025-11-01 21:12:45 +0545
 nav_order: 4   # smaller number = appears earlier
 permalink: /misc/
+status: draft
 ---
 <!-- ## Python
 - [Python Basics – 1](python/2025/11/31/numpy-basics-1.html)
