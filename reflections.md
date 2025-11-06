@@ -6,8 +6,8 @@ nav_order: 3
 ---
 
 ## Reflections
-1. [ठूलो मान्छे बन्नू](reflections/2025/11/05/may-you-be-great.html)
-2. [ठूलो मान्छे बन्नू](reflections/2025/11/05/may-you-be-great.html)
+<!-- 1. [ठूलो मान्छे बन्नू](reflections/2025/11/05/may-you-be-great.html)
+2. [ठूलो मान्छे बन्नू](reflections/2025/11/05/may-you-be-great.html) -->
 3. dfs
 4. dsfs
 5. fsdfs
