@@ -2,8 +2,14 @@
 layout: post
 title:  "Creating Arrays – NumPy"
 date:   2025-11-02 20:40:45 +0545
+author: Dipak Pulami Magar
 categories: numpy
 ---
+
+<div class="image-thumbnail">
+    <img class="thumbnail" src="../../../../assets/numpy-logo.png">
+</div>
+
 **Table of Contents**
 - [1. From Python (Data) Structures ✅](#1-from-python-data-structures-)
 - [2. Initial Placeholders](#2-initial-placeholders)
@@ -24,10 +30,6 @@ categories: numpy
 - [4. Linearly spaced values: np.linspace() ✅](#4-linearly-spaced-values-nplinspace-)
 
 ---
-<center>
-<!-- ![numpy-logo](../../../../assets/numpy-logo.png) -->
-<img src="../../../../assets/numpy-logo.png">
-</center>
 
 <!-- ## Creating NumPy Array -->
 <!-- A NumPy array holds data of the same type, unlike a Python list where elements can have different types. This makes NumPy arrays faster and more efficient than lists. -->

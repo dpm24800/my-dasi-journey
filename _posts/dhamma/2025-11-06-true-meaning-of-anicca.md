@@ -6,10 +6,13 @@ date:   2025-11-06 10:12:45 +0545
 categories: dhamma hh
 status: published
 ---
-
-*(Hillside Hermitage Talk no.108hh - edited transcript)*  
-[YouTube](https://youtu.be/zPmfB2to2sQ)  
-
+<center>
+    <iframe width="560" height="360" src="https://www.youtube.com/embed/zPmfB2to2sQ?si=HVloaMNcPUFdzpAJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br>
+    <i>(Hillside Hermitage Talk no.108hh - edited transcript)</i><br>
+    <a href="https://youtu.be/zPmfB2to2sQ">YouTube</a>
+</center>
+---
+<!-- [YouTube](https://youtu.be/zPmfB2to2sQ)   -->
 > “I have proclaimed to my disciples the way to understand thus : ‘This body of mine, made of material form, consisting of the four great elements, procreated by a mother and father, and built up out of boiled rice and porridge, is subject to change, to being worn and rubbed away, to dissolution and disintegration, and this consciousness of mine is supported by it and bound up with it.’ And thereby many disciples of mine abide having reached the consummation and perfection of direct knowledge.” - [Mn77](https://suttacentral.net/mn77)
 
 **Ajahn Nyanamoli**: What is anicca?  

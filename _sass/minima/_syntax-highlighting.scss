@@ -2,11 +2,11 @@
  * Syntax highlighting styles
  */
 .highlight {
-  background: #353535;    // outsidebox: not used
+  background: #2f323b;    // outsidebox: not used 353535 282b31
   @extend %vertical-rhythm;
 
   .highlighter-rouge & {
-    background: #353535; /* background-box */
+    background: #2f323b; /* background-box */
   }
 
   .c     { color: #57a64a; font-style: italic } // Comment

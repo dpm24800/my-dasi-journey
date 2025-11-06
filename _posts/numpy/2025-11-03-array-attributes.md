@@ -4,6 +4,9 @@ title:  "Array Attributes – NumPy"
 date:   2025-11-03 21:12:45 +0545
 categories: numpy
 ---
+<div class="image-thumbnail">
+    <img class="thumbnail" src="../../../../assets/numpy-logo.png">
+</div>
 
 **Table of Contents**:
 - [Array Dimensions (array.ndim)](#array-dimensions-arrayndim)
@@ -17,11 +20,6 @@ categories: numpy
 - [Array Data Type (array.dtype)](#array-data-type-arraydtype)
  
 ---
-&nbsp;
-<center>
-    <!-- ![numpy-logo](../../../../assets/numpy-logo.png) -->
-    <img src="../../../../assets/numpy-logo.png">
-</center>
 
 Here are key/important attributes/properties of an ndarray object:
 - `array.ndim` – the number of dimensions (axes) of the array.

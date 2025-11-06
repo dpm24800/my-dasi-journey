@@ -5,6 +5,10 @@ date: 2025-11-06 05:12:45 +0545
 author: Dipak Pulami Magar
 categories: numpy
 ---
+<div class="image-thumbnail">
+    <img class="thumbnail" src="../../../../assets/numpy-logo.png">
+</div>
+
 <!-- ## Table of Contents
 - [Table of Contents](#table-of-contents)
 - [Reshaping Array: Changing Array Shape](#reshaping-array-changing-array-shape)
@@ -15,10 +19,7 @@ categories: numpy
   - [Transposing 2-D Array](#transposing-2-d-array)
     - [Transposing 3-D Array](#transposing-3-d-array) -->
 
-<center>
-<!-- ![numpy-logo](../../../../assets/numpy-logo.png) -->
-<img src="../../../../assets/numpy-logo.png">
-</center>
+---
 
 ## Reshaping Array: Changing Array Shape
 Reshaping an array means changing its dimension. NumPy provides `np.reshape()` function to reshape or change the dimensions of an array.
