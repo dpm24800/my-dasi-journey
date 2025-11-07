@@ -19,3 +19,12 @@ permalink: /dsai/
 7. [Array Manipulation – NumPy](../numpy/2025/11/06/array-manipulation.html)
 8. [Broadcasting Arrays – NumPy](../numpy/2025/11/05/broadcasting-arrays.html)
 8. [Array Operations – NumPy](../numpy/2025/11/04/broadcasting-arrays.html)
+
+**Statistical Functions**:
+- [Mean – Statistics & Numpy](../numpy/stats/2025/11/06/mean.html)
+- [Median – Statistics & Numpy](../numpy/stats/2025/11/06/median.html)
+- [Mode – Statistics & Numpy](../numpy/stats/2025/11/06/mode.html)
+- [Standard Deviation – Statistics & Numpy](../numpy/stats/2025/11/06/standard-deviation.html)
+- [Covariance – Statistics & Numpy](../numpy/stats/2025/11/06/covariance.html)
+- [Coef – Statistics & Numpy](../numpy/stats/2025/11/06/mode.html)
+- [Correlation – Statistics & Numpy](../numpy/stats/2025/11/06/correlation.html)

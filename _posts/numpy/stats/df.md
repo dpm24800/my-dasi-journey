@@ -1,0 +1,9 @@
+| **Concept**             | **Description**                                                                                                                              |   |                                          |
+| :---------------------- | :------------------------------------------------------------------------------------------------------------------------------------------- | - | ---------------------------------------- |
+| **Correlation**         | Measures the **strength** and **direction** of the linear relationship between two variables.                                                |   |                                          |
+| **Formula**             | ( r_{XY} = \frac{\text{Cov}(X, Y)}{\sigma_X \cdot \sigma_Y} )                                                                                |   |                                          |
+| **Range**               | From **-1 to +1**                                                                                                                            |   |                                          |
+| **Interpretation**      | <ul><li>**+1** → Perfect positive correlation</li><li>**0** → No linear relationship</li><li>**-1** → Perfect negative correlation</li></ul> |   |                                          |
+| **Strong Relationship** | Usually when (                                                                                                                               | r | > 0.7) (absolute value greater than 0.7) |
+| **Function in NumPy**   | `np.corrcoef(X, Y)`                                                                                                                          |   |                                          |
+| **Unit**                | None — correlation is **dimensionless**, so it can compare variables with different scales or units                                          |   |                                          |

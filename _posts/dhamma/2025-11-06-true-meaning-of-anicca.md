@@ -1,13 +1,15 @@
 ---
 layout: post
-author: Ajahn Ñāṇamoli Thero
 title:  True Meaning of Anicca
+author: Ajahn Ñāṇamoli Thero
+youtube: https://www.youtube.com/watch?v=zPmfB2to2sQ
 date:   2025-11-06 10:12:45 +0545
 categories: dhamma hh
 status: published
 ---
-<center>
-    <iframe width="560" height="360" src="https://www.youtube.com/embed/zPmfB2to2sQ?si=HVloaMNcPUFdzpAJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br>
+
+<!-- <iframe width="560" height="360" src="https://www.youtube.com/embed/zPmfB2to2sQ?si=HVloaMNcPUFdzpAJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br> -->
+<center>    
     <i>(Hillside Hermitage Talk no.108hh - edited transcript)</i><br>
     <a href="https://youtu.be/zPmfB2to2sQ">YouTube</a>
 </center>

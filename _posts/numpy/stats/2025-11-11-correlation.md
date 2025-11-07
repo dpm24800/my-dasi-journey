@@ -1,13 +1,12 @@
 ---
 layout: post
 title:  Correlation — Statistics & NumPy
+description: Measuring the Strength and Direction of Relationships
 author: Dipak Pulami Magar
 date:   2025-11-06 5:12:45 +0545
 categories: numpy stats
 status: draft
 ---
-
-Correlation — Measuring the Strength and Direction of Relationships
 
 ## 1. Introduction
 While **covariance** tells us *whether* two variables move together, **correlation** tells us *how strongly* and *how consistently* they move together.
@@ -22,7 +21,8 @@ Let’s recall:
 * **Covariance** can be any value (e.g., 8, -20, 0.3) depending on the units of measurement.
 * **Correlation**, on the other hand, always lies between **-1 and +1**, making it easy to interpret.
 
-**Example**:
+**Example**:  
+
 | Correlation Value | Interpretation                       |
 | :---------------: | :----------------------------------- |
 |         +1        | Perfect positive linear relationship |
@@ -45,19 +45,24 @@ where:
 So correlation is simply the **normalized covariance**.
 
 ## 4. Step-by-Step Example (Manual Calculation)
-Let’s take two datasets:
-$$ X = [2, 4, 6, 8, 10]$$
+Let’s take two datasets:  
+
+$$ X = [2, 4, 6, 8, 10]$$  
+
 $$ Y = [1, 3, 5, 7, 9] $$
 
-We’ve already computed:
+We’ve already computed:  
+
 $$ \text{Cov}(X, Y) = 8 $$
 
-Now find the standard deviations:
+Now find the standard deviations:  
+
 $$
 \sigma_X = \sqrt{8} = 2.828, \quad \sigma_Y = \sqrt{8} = 2.828
 $$
 
 Then:
+
 $$ r_{XY} = \frac{8}{2.828 \times 2.828} = 1 $$
 
 **Correlation = +1** → perfect positive linear relationship.
@@ -82,7 +87,7 @@ $$ r_{XY} = \frac{8}{2.828 \times 2.828} = 1 $$
 | :-------------- | :---------------------------- | :------------------------------- |
 | Definition      | Average product of deviations | Normalized covariance            |
 | Units           | Product of units of X and Y   | Unitless                         |
-| Range           | $$-\infty, +\infty$$            | $$[-1, +1]$$                       |
+| Range           | $$-\infty, +\infty$$          | $$[-1, +1]$$                     |
 | Interpretation  | Shows direction               | Shows direction **and strength** |
 | Scale-dependent | Yes                           | No                               |
 
@@ -141,7 +146,6 @@ print("Correlation Matrix:\n", corr_matrix)
 ```
 
 **Output:**
-
 ```
 Correlation Matrix:
 [[1.         0.99124071]
@@ -164,14 +168,15 @@ Imagine a scatter plot:
 
 ## 11. Key Takeaways
 
-| Concept             | Description                                                      |   |         |
-| :------------------ | :--------------------------------------------------------------- | - | ------- |
-| Correlation         | Measures the **strength and direction** of linear relationships. |   |         |
-| Formula             | $$ r_{XY} = \frac{\text{Cov}(X, Y)}{\sigma_X \cdot \sigma_Y} $$  |   |         |
-| Range               | $$[-1, +1]$$                                                     |   |         |
-| Strong Relationship | (r | > 0.7 )                                                     |   |         |
-| Function            | `np.corrcoef(X, Y)` in NumPy                                     |   |         |
-| Unit                | None (dimensionless)                                             |   |         |
+| Concept             | Description                                                      |
+| :------------------ | :--------------------------------------------------------------- |
+| Correlation         | Measures the **strength and direction** of linear relationships. |
+| Formula             | $$ r_{XY} = \frac{\text{Cov}(X, Y)}{\sigma_X \cdot \sigma_Y} $$  |
+| Range               | $$[-1, +1]$$                                                     |
+| **Interpretation**  | **+1** → Perfect positive correlation <br>**0** → No linear relationship<br>**-1** → Perfect negative correlation |
+| Strong Relationship | $$ r > 0.7$$                                                    |
+| Function            | `np.corrcoef(X, Y)` in NumPy                                    |
+| Unit                | None (dimensionless)                                            |
 
 ### 12. Summary
 * **Covariance** shows *direction* of movement.
