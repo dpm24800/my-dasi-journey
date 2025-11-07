@@ -7,9 +7,9 @@ categories: numpy stats
 status: draft
 ---
 
-## Correlation — Measuring the Strength and Direction of Relationships
+Correlation — Measuring the Strength and Direction of Relationships
 
-### 1. Introduction
+## 1. Introduction
 While **covariance** tells us *whether* two variables move together, **correlation** tells us *how strongly* and *how consistently* they move together.
 
 Correlation standardizes covariance into a **dimensionless measure** between **-1 and +1**, allowing us to **compare relationships** even if the variables have different units or scales.
@@ -17,14 +17,12 @@ Correlation standardizes covariance into a **dimensionless measure** between **-
 It is one of the most widely used concepts in statistics, data analysis, and machine learning — especially for understanding feature relationships and dependencies.
 
 
-### 2. Intuitive Understanding
+## 2. Intuitive Understanding
 Let’s recall:
-
 * **Covariance** can be any value (e.g., 8, -20, 0.3) depending on the units of measurement.
 * **Correlation**, on the other hand, always lies between **-1 and +1**, making it easy to interpret.
 
-#### Example:
-
+**Example**:
 | Correlation Value | Interpretation                       |
 | :---------------: | :----------------------------------- |
 |         +1        | Perfect positive linear relationship |
@@ -32,8 +30,7 @@ Let’s recall:
 |         0         | No linear relationship               |
 
 
-### 3. Mathematical Definition
-
+## 3. Mathematical Definition
 For two variables ( X ) and ( Y ):
 
 $$
@@ -41,7 +38,6 @@ r_{XY} = \frac{\text{Cov}(X, Y)}{\sigma_X \cdot \sigma_Y}
 $$
 
 where:
-
 * $$ \text{Cov}(X, Y) $$ = covariance of X and Y
 * $$ \sigma_X $$ = standard deviation of X
 * $$ \sigma_Y $$ = standard deviation of Y
@@ -49,22 +45,13 @@ where:
 So correlation is simply the **normalized covariance**.
 
 
-### 4. Step-by-Step Example (Manual Calculation)
-
+## 4. Step-by-Step Example (Manual Calculation)
 Let’s take two datasets:
-
-$$
-X = [2, 4, 6, 8, 10]
-$$
-$$
-Y = [1, 3, 5, 7, 9]
-$$
+$$ X = [2, 4, 6, 8, 10]$$
+$$ Y = [1, 3, 5, 7, 9] $$
 
 We’ve already computed:
-
-$$
-\text{Cov}(X, Y) = 8
-$$
+$$ \text{Cov}(X, Y) = 8 $$
 
 Now find the standard deviations:
 
@@ -73,15 +60,12 @@ $$
 $$
 
 Then:
-
-$$
-r_{XY} = \frac{8}{2.828 \times 2.828} = 1
-$$
+$$ r_{XY} = \frac{8}{2.828 \times 2.828} = 1 $$
 
 **Correlation = +1** → perfect positive linear relationship.
 
 
-### 5. Interpretation
+## 5. Interpretation
 
 |  Value of r  | Relationship Type | Description                                                 |
 | :----------: | :---------------- | :---------------------------------------------------------- |
@@ -94,7 +78,7 @@ $$
 |      -1      | Perfect negative  | One variable increases while the other decreases perfectly. |
 
 
-### 6. Covariance vs Correlation
+## 6. Covariance vs Correlation
 
 | Aspect          | Covariance                    | Correlation                      |
 | :-------------- | :---------------------------- | :------------------------------- |
