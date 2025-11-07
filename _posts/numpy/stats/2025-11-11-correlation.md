@@ -1,5 +1,5 @@
 
-## 📘 Correlation — Measuring the Strength and Direction of Relationships
+## Correlation — Measuring the Strength and Direction of Relationships
 
 ### 1. Introduction
 While **covariance** tells us *whether* two variables move together, **correlation** tells us *how strongly* and *how consistently* they move together.
@@ -28,15 +28,15 @@ Let’s recall:
 
 For two variables ( X ) and ( Y ):
 
-[
+$$
 r_{XY} = \frac{\text{Cov}(X, Y)}{\sigma_X \cdot \sigma_Y}
-]
+$$
 
 where:
 
-* ( \text{Cov}(X, Y) ) = covariance of X and Y
-* ( \sigma_X ) = standard deviation of X
-* ( \sigma_Y ) = standard deviation of Y
+* $$ \text{Cov}(X, Y) $$ = covariance of X and Y
+* $$ \sigma_X $$ = standard deviation of X
+* $$ \sigma_Y $$ = standard deviation of Y
 
 So correlation is simply the **normalized covariance**.
 
@@ -45,18 +45,18 @@ So correlation is simply the **normalized covariance**.
 
 Let’s take two datasets:
 
-[
+$$
 X = [2, 4, 6, 8, 10]
-]
-[
+$$
+$$
 Y = [1, 3, 5, 7, 9]
-]
+$$
 
 We’ve already computed:
 
-[
+$$
 \text{Cov}(X, Y) = 8
-]
+$$
 
 Now find the standard deviations:
 
@@ -100,7 +100,6 @@ In summary:
 
 > Correlation = Standardized Covariance
 
----
 
 ### 7. Types of Correlation
 
@@ -116,7 +115,6 @@ In summary:
    No linear relationship.
    Example: Shoe size and IQ.
 
----
 
 ### 8. NumPy Implementation — `np.corrcoef()`
 
@@ -144,7 +142,6 @@ Correlation Matrix:
 
 The correlation between `X` and `Y` is **+1**, confirming a perfect positive relationship.
 
----
 
 #### Example 2: Slightly Imperfect Relationship
 
@@ -166,8 +163,6 @@ Correlation Matrix:
 
 The correlation coefficient ≈ 0.99 → very strong positive relationship.
 
----
-
 ### 9. Visual Understanding
 
 Imagine a scatter plot:
@@ -176,16 +171,12 @@ Imagine a scatter plot:
 * **Perfect Negative (r = -1)** → points lie on a downward straight line.
 * **Zero Correlation (r ≈ 0)** → points are scattered randomly, with no pattern.
 
----
-
 ### 10. Real-Life Applications
 
 * **Finance:** Relation between two stock prices or returns.
 * **Machine Learning:** Feature correlation to detect redundancy.
 * **Health Science:** Relation between exercise hours and blood pressure.
 * **Psychology:** Relationship between stress level and productivity.
-
----
 
 ### 11. Key Takeaways
 
@@ -198,8 +189,6 @@ Imagine a scatter plot:
 | Function            | `np.corrcoef(X, Y)` in NumPy                                     |   |         |
 | Unit                | None (dimensionless)                                             |   |         |
 
----
-
 ### 12. Summary
 
 * **Covariance** shows *direction* of movement.
@@ -207,12 +196,5 @@ Imagine a scatter plot:
 * It is the **normalized form of covariance**.
 * In NumPy, `np.corrcoef()` provides fast correlation computation.
 
----
-
 **In short:**
-
 > Correlation = Covariance / (Standard deviation of X × Standard deviation of Y)
-
----
-
-Would you like me to make a **final summary article combining all six parts (Mean → Correlation)** into one complete guide for your GitHub or blog?
