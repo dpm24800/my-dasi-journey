@@ -1,22 +1,15 @@
-Perfect 👍
-Here’s **Part 6 of your Statistics Series** — a complete, well-structured explanation of **Correlation**, following the same educational and consistent tone as your previous articles.
-
----
 
 ## 📘 Correlation — Measuring the Strength and Direction of Relationships
 
 ### 1. Introduction
-
 While **covariance** tells us *whether* two variables move together, **correlation** tells us *how strongly* and *how consistently* they move together.
 
 Correlation standardizes covariance into a **dimensionless measure** between **-1 and +1**, allowing us to **compare relationships** even if the variables have different units or scales.
 
 It is one of the most widely used concepts in statistics, data analysis, and machine learning — especially for understanding feature relationships and dependencies.
 
----
 
 ### 2. Intuitive Understanding
-
 Let’s recall:
 
 * **Covariance** can be any value (e.g., 8, -20, 0.3) depending on the units of measurement.
@@ -30,7 +23,6 @@ Let’s recall:
 |         -1        | Perfect negative linear relationship |
 |         0         | No linear relationship               |
 
----
 
 ### 3. Mathematical Definition
 
@@ -48,7 +40,6 @@ where:
 
 So correlation is simply the **normalized covariance**.
 
----
 
 ### 4. Step-by-Step Example (Manual Calculation)
 
@@ -79,9 +70,8 @@ Then:
 r_{XY} = \frac{8}{2.828 \times 2.828} = 1
 ]
 
-✅ **Correlation = +1** → perfect positive linear relationship.
+**Correlation = +1** → perfect positive linear relationship.
 
----
 
 ### 5. Interpretation
 
@@ -95,7 +85,6 @@ r_{XY} = \frac{8}{2.828 \times 2.828} = 1
 | -0.7 to -0.9 | Strong negative   | Strong inverse relationship.                                |
 |      -1      | Perfect negative  | One variable increases while the other decreases perfectly. |
 
----
 
 ### 6. Covariance vs Correlation
 
@@ -107,7 +96,7 @@ r_{XY} = \frac{8}{2.828 \times 2.828} = 1
 | Interpretation  | Shows direction               | Shows direction **and strength** |
 | Scale-dependent | Yes                           | No                               |
 
-✅ In summary:
+In summary:
 
 > Correlation = Standardized Covariance
 
@@ -175,7 +164,7 @@ Correlation Matrix:
  [0.99124071 1.        ]]
 ```
 
-✅ The correlation coefficient ≈ 0.99 → very strong positive relationship.
+The correlation coefficient ≈ 0.99 → very strong positive relationship.
 
 ---
 
@@ -220,7 +209,7 @@ Imagine a scatter plot:
 
 ---
 
-✅ **In short:**
+**In short:**
 
 > Correlation = Covariance / (Standard deviation of X × Standard deviation of Y)
 
