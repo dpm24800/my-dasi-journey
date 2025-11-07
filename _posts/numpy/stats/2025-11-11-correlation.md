@@ -60,15 +60,15 @@ $$
 
 Now find the standard deviations:
 
-[
+$$
 \sigma_X = \sqrt{8} = 2.828, \quad \sigma_Y = \sqrt{8} = 2.828
-]
+$$
 
 Then:
 
-[
+$$
 r_{XY} = \frac{8}{2.828 \times 2.828} = 1
-]
+$$
 
 **Correlation = +1** → perfect positive linear relationship.
 
@@ -92,7 +92,7 @@ r_{XY} = \frac{8}{2.828 \times 2.828} = 1
 | :-------------- | :---------------------------- | :------------------------------- |
 | Definition      | Average product of deviations | Normalized covariance            |
 | Units           | Product of units of X and Y   | Unitless                         |
-| Range           | (-\infty, +\infty)            | ([-1, +1])                       |
+| Range           | $$-\infty, +\infty$$            | ([-1, +1])                       |
 | Interpretation  | Shows direction               | Shows direction **and strength** |
 | Scale-dependent | Yes                           | No                               |
 
