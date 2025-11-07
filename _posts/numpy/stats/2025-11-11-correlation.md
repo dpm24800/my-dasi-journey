@@ -1,3 +1,10 @@
+---
+layout: post
+title:  Correlation - Statistics & NumPy
+date:   2025-11-06 5:12:45 +0545
+categories: numpy stats
+status: draft
+---
 
 ## Correlation — Measuring the Strength and Direction of Relationships
 
