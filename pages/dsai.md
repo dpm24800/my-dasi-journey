@@ -6,7 +6,6 @@ nav_order: 1   # smaller number = appears earlier
 permalink: /dsai/
 ---
 
-
 - [NumPy Basics – 1](../numpy/2025/11/31/numpy-basics-1.html)
 
 ## NumPy

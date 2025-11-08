@@ -6,10 +6,10 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 #
 layout: home
-title:  
+# title:  
 permalink: /
 nav_order: 0
-hidden: true
+# hidden: true
 ---
 
 # 🌿 The Path 
