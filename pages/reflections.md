@@ -9,8 +9,8 @@ permalink: /reflectiosn/
 ## Reflections
 <!-- 1. [ठूलो मान्छे बन्नू](reflections/2025/11/05/may-you-be-great.html)
 2. [ठूलो मान्छे बन्नू](reflections/2025/11/05/may-you-be-great.html) -->
-3. dfs
-4. dsfs
-5. fsdfs
-6. dfsf
-7. 
+1. Reflection 1
+2. dsfs
+3. fsdfs
+4. dfsf
+5. 
