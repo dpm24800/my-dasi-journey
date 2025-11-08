@@ -2,6 +2,7 @@
 layout: post
 title:  Correlation — Statistics & NumPy
 description: Measuring the Strength and Direction of Relationships
+thumbnail: ../../../../../assets/Correl.png
 author: Dipak Pulami Magar
 date:   2025-11-06 10:12:45 +0545
 categories: numpy stats

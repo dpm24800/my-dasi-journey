@@ -2,13 +2,14 @@
 layout: post
 title:  "Creating Arrays – NumPy"
 date:   2025-11-02 20:40:45 +0545
+thumbnail: ../../../../assets/numpy-logo.png
 author: Dipak Pulami Magar
 categories: numpy
 ---
 
-<div class="image-thumbnail">
+<!-- <div class="image-thumbnail">
     <img class="thumbnail" src="../../../../assets/numpy-logo.png">
-</div>
+</div> -->
 
 **Table of Contents**
 - [1. From Python (Data) Structures ✅](#1-from-python-data-structures-)
