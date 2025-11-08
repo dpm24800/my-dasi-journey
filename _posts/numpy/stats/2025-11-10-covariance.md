@@ -11,7 +11,7 @@ status: draft
 
 ### 1. Introduction
 
-The **Covariance** is a statistical measure that describes the **direction of the linear relationship between two variables**.
+The **Covariance** is a statistical measure that describes the **direction of the linear relationship between two variables**.  
 It tells us **whether two variables increase or decrease together** (positive relationship), or whether one increases while the other decreases (negative relationship).
 
 It is a fundamental concept in data analysis, finance, and machine learning — especially useful in understanding how different features or datasets move with respect to each other.
@@ -69,13 +69,13 @@ Y = [1, 3, 5, 7, 9]
 $$
 
 1. **Mean of X and Y:**
+   
    $$
    \bar{X} = 6, \quad \bar{Y} = 5
    $$
 
 2. **Deviations:**
    
-
    $$
    X - \bar{X} = [-4, -2, 0, 2, 4]
    $$
@@ -151,7 +151,7 @@ So, Cov(X, Y) = **8**, which matches our manual calculation.
 np.cov(X, Y)
 ```
 
-By default, NumPy divides by ( N-1 ) (sample covariance).
+By default, NumPy divides by ( N-1 ) (sample covariance).  
 To divide by ( N ) (population), set `bias=True`.
 
 ---
@@ -190,9 +190,9 @@ Imagine comparing:
 * $$ X $$: Amount of rainfall (mm)
 * $$ Y $$: Crop yield (tons)
 
-If more rain generally means higher yield, covariance will be **positive**.
-If excessive rain reduces yield (flooding, for example), covariance will be **negative**.
-If rain has no consistent effect, covariance will be **close to zero**.
+If more rain generally means higher yield, covariance will be **positive**.  
+If excessive rain reduces yield (flooding, for example), covariance will be **negative**.  
+If rain has no consistent effect, covariance will be **close to zero**.  
 
 ### 9. Key Takeaways
 

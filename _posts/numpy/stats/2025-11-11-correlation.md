@@ -16,6 +16,7 @@ Correlation standardizes covariance into a **dimensionless measure** between **-
 
 It is one of the most widely used concepts in statistics, data analysis, and machine learning — especially for understanding feature relationships and dependencies.
 
+---
 
 ## 2. Intuitive Understanding
 Let’s recall:
@@ -30,6 +31,7 @@ Let’s recall:
 |         -1        | Perfect negative linear relationship |
 |         0         | No linear relationship               |
 
+---
 
 ## 3. Mathematical Definition
 For two variables ( X ) and ( Y ):
@@ -44,6 +46,8 @@ where:
 * $$ \sigma_Y $$ = standard deviation of Y
 
 So correlation is simply the **normalized covariance**.
+
+---
 
 ## 4. Step-by-Step Example (Manual Calculation)
 Let’s take two datasets:  
@@ -68,6 +72,7 @@ $$ r_{XY} = \frac{8}{2.828 \times 2.828} = 1 $$
 
 **Correlation = +1** → perfect positive linear relationship.
 
+---
 
 ## 5. Interpretation
 
@@ -81,6 +86,7 @@ $$ r_{XY} = \frac{8}{2.828 \times 2.828} = 1 $$
 | -0.7 to -0.9 | Strong negative   | Strong inverse relationship.                                |
 |      -1      | Perfect negative  | One variable increases while the other decreases perfectly. |
 
+---
 
 ## 6. Covariance vs Correlation
 
@@ -95,6 +101,7 @@ $$ r_{XY} = \frac{8}{2.828 \times 2.828} = 1 $$
 In summary:
 > Correlation = Standardized Covariance
 
+--- 
 
 ## 7. Types of Correlation
 
@@ -110,6 +117,7 @@ In summary:
    - No linear relationship.
    - Example: Shoe size and IQ.
 
+---
 
 ## 8. NumPy Implementation — `np.corrcoef()`
 NumPy provides an easy way to compute correlation coefficients and correlation matrices.
@@ -135,6 +143,7 @@ Correlation Matrix:
 
 The correlation between `X` and `Y` is **+1**, confirming a perfect positive relationship.
 
+---
 
 **Example 2: Slightly Imperfect Relationship**
 
@@ -155,17 +164,23 @@ Correlation Matrix:
 
 The correlation coefficient ≈ 0.99 → very strong positive relationship.
 
+---
+
 ## 9. Visual Understanding
 Imagine a scatter plot:
 * **Perfect Positive (r = +1)** → points lie on an upward straight line.
 * **Perfect Negative (r = -1)** → points lie on a downward straight line.
 * **Zero Correlation (r ≈ 0)** → points are scattered randomly, with no pattern.
 
+---
+
 ## 10. Real-Life Applications
 * **Finance:** Relation between two stock prices or returns.
 * **Machine Learning:** Feature correlation to detect redundancy.
 * **Health Science:** Relation between exercise hours and blood pressure.
 * **Psychology:** Relationship between stress level and productivity.
+
+---
 
 ## 11. Key Takeaways
 
@@ -178,6 +193,8 @@ Imagine a scatter plot:
 | Strong Relationship | $$ r > 0.7$$                                                    |
 | Function            | `np.corrcoef(X, Y)` in NumPy                                    |
 | Unit                | None (dimensionless)                                            |
+
+---
 
 ### 12. Summary
 * **Covariance** shows *direction* of movement.
