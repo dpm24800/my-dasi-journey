@@ -12,8 +12,6 @@ nav_order: 0
 # hidden: true
 ---
 
-# 🌿 The Path 
-
 Welcome to my personal space — where the worlds of **Data, AI, and Dhamma** meet.  
 This site reflects a journey of both **intellectual growth** and **inner understanding** — learning how the mind works, both through **machines** and **mindfulness**.
 
