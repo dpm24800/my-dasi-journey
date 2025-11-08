@@ -2,7 +2,7 @@
 layout: post
 title:  Standard Deviation — Statistics & NumPy
 author: Dipak Pulami Magar
-date:   2025-11-06 5:12:45 +0545
+date:   2025-11-06 10:12:45 +0545
 categories: numpy stats
 status: draft
 ---

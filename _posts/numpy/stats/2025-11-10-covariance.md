@@ -1,13 +1,12 @@
 ---
 layout: post
 title:  Covariance — Statistics & NumPy
+description: Measuring How Two Variables Move Together
 author: Dipak Pulami Magar
 date:   2025-11-06 5:12:45 +0545
 categories: numpy stats
 status: draft
 ---
-
-- Covariance — Measuring How Two Variables Move Together
 
 ### 1. Introduction
 

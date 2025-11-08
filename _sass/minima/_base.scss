@@ -147,9 +147,9 @@ blockquote {
 pre,
 code {
   @include relative-font-size(0.9375);
-  border: 1px solid #2f323b ;    //$grey-color-light 353535
-  border-radius: 3px; // 3px
-  background-color: #2f323b; // code-line outside background 515560 353535 282b 31
+  border: 1px solid #212e47 ;    //$grey-color-light 353535 last: 2f323b
+  border-radius: 1px; // 3px
+  background-color: #212e47; // code-line outside background 515560 353535 282b 31
 }
 
 code {

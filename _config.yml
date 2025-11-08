@@ -48,16 +48,15 @@ plugins:
  - jekyll-seo-tag
  - jekyll-feed
 
-
-null:
-  nav_links:
-      - title: "Data Science and AI"
-        url: /dsai/
-      - title: "Dhamma"
-        url: /dhamma/
-      - title: "Reflections"
-        url: /reflections/
-      - title: "Misc."
-        url: /misc/
-      - title: "About"
-        url: /about/
+# null:
+#   nav_links:
+#       - title: "Data Science and AI"
+#         url: /dsai/
+#       - title: "Dhamma"
+#         url: /dhamma/
+#       - title: "Reflections"
+#         url: /reflections/
+#       - title: "Misc."
+#         url: /misc/
+#       - title: "About"
+#         url: /about/
