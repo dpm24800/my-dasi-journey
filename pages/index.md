@@ -17,7 +17,7 @@ This site reflects a journey of both **intellectual growth** and **inner underst
 
 ---
 
-## 🧭 Introduction  
+## Introduction  
 
 I document my ongoing exploration of **Data Science**, **Machine Learning**, and **Artificial Intelligence**, sharing structured notes, tutorials, and reflections from my daily learning.  
 
@@ -25,7 +25,7 @@ Alongside, I write about **Dhamma**, **mindfulness**, and **life lessons**, blen
 
 ---
 
-## 📂 Featured Categories  
+## Featured Categories  
 
 - [**Data Science & AI**](/the-path/category/data-science/)  
 - [**Machine Learning Notes**](/the-path/category/machine-learning/)  
@@ -35,7 +35,7 @@ Alongside, I write about **Dhamma**, **mindfulness**, and **life lessons**, blen
 
 ---
 
-## 🌐 Connect with Me  
+## Connect with Me  
 
 - [GitHub](https://github.com/dpm24800)  
 - [LinkedIn](https://www.linkedin.com/in/dpm24800/)  
@@ -44,7 +44,7 @@ Alongside, I write about **Dhamma**, **mindfulness**, and **life lessons**, blen
 
 ---
 
-## ✨ Poetic Thought  
+## Poetic Thought  
 
 > “The mind is like a sky — vast, open, and clear.  
 > Thoughts and emotions are clouds; they come and go,  
