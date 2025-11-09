@@ -5,7 +5,7 @@ description: Measuring the Spread of Data
 author: Dipak Pulami Magar
 date:   2025-11-06 10:12:45 +0545
 categories: numpy stats
-status: draft
+status: published
 ---
 
 ### 1. Introduction

@@ -1,9 +1,12 @@
 ---
 layout: post
 title:  "NumPy – note plan"
-date:   2025-10-31 21:12:45 +0545
+author: Dipak Pulami Magar
+date:   2025-10-05 10:12:45 +0545
 categories: note-plans
+status: draft
 ---
+
 ## 1. Introduction to NumPy
 - **What is NumPy?**
   - Stands for Numerical Python.
