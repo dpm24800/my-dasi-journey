@@ -74,7 +74,7 @@ permalink: /dsai/
 ---
 
 ## Matplotlib
-1. [Introducting Pandas](../matplotlib/2025/11/08/introducing-matplotlib.html)
+1. [Introducting Matplotlib](../matplotlib/2025/11/08/introducing-matplotlib.html)
 2. [xxxxxx – NumPy](../matplotlib/2025/11/09/xxxxxxxx.html)
 
 ---
