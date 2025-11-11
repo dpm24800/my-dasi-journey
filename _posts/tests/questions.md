@@ -9,53 +9,30 @@ categories: test
 status: draft
 ---
 
-### 1. Print the first and last letter of the string "PythonIsFun".
-
-```py
-str = "PythonIsFun"
-
-print(str[0], str[-1])
-```
-**Output**,
-```
-P n
-```
-
-### 2. Write a program that repeats "I love Python! " 5 times. (String Replication)
-
-```py
-print("I love Python! " * 5)
-
-# str = "I love Python! "
-# print(str * 5)
-```
-**Output**,
-```
-I love Python! I love Python! I love Python! I love Python! I love Python! 
-```
-
-### 3. Reverse the string "DataScience" using slicing. 
-3. Combine the strings "Data" and "Science" with a space in between. (String Concatenation)
-4. Create an acronym generator: National Aeronautics Space Administration → NASA. 
-5. Make the first letter of each word in "python is awesome" uppercase. 
-6. Slice out the word "Python" from "Learning Python is fun!". 
-7. Create a string "Python" and print it without the 'o'. 
-8.  Ask the user to input 5 favorite foods one by one and store them in a list. Then print the list in reverse order.
-9.  Take a list and reverse it.
-10. Take a string and print characters at even indexes.
-11. Ask the user for a word list and replace all occurrences of "bad" with "good".
-12. Print only the first and last items of this list: ["burger", "pizza", "pasta", "noodles", "momo"].
-13. Take an age as input. If the person is 18 or older, print "You can vote!", else print "Too young to vote." 
-14. Ask the user for a number. Print whether it’s even or odd. 
-15. Write a program to check if a number is positive, negative, or zero. 
-16. Ask the user for a password. If it matches "secret123", print "Access granted!", else "Wrong password!". 
-17. Name Formatter :Ask the user to enter their full name and print:
+1. Print the first and last letter of the string "PythonIsFun".
+2. Write a program that repeats "I love Python! " 5 times. (String Replication)
+3. Reverse the string "DataScience" using slicing. 
+4. Combine the strings "Data" and "Science" with a space in between. (String Concatenation)
+5. Create an acronym generator: National Aeronautics Space Administration → NASA. 
+6. Make the first letter of each word in "python is awesome" uppercase. 
+7. Slice out the word "Python" from "Learning Python is fun!". 
+8. Create a string "Python" and print it without the 'o'. 
+9. Ask the user to input 5 favorite foods one by one and store them in a list. Then print the list in reverse order.
+10. Take a list and reverse it.
+11. Take a string and print characters at even indexes.
+12. Ask the user for a word list and replace all occurrences of "bad" with "good".
+13. Print only the first and last items of this list: ["burger", "pizza", "pasta", "noodles", "momo"].
+14. Take an age as input. If the person is 18 or older, print "You can vote!", else print "Too young to vote." 
+15. Ask the user for a number. Print whether it’s even or odd. 
+16. Write a program to check if a number is positive, negative, or zero. 
+17. Ask the user for a password. If it matches "secret123", print "Access granted!", else "Wrong password!". 
+18. Name Formatter :Ask the user to enter their full name and print:
     - First name 
     - Last name 
     - Initials 
     - Total number of characters (excluding spaces)
-18. Reverse Words: Input a sentence and print each word in reverse order: "Hello World" → "olleH dlroW" 
-19. Check Palindrome :Ask for a word and check whether it’s a palindrome. 
+19. Reverse Words: Input a sentence and print each word in reverse order: "Hello World" → "olleH dlroW" 
+20. Check Palindrome :Ask for a word and check whether it’s a palindrome. 
 21. Multiplication Table Generator :Ask the user for a number and print its multiplication table up to 10. 
 22. Password Checker (3 Chances) :Set a password. Allow the user to guess it with only 3 attempts. 
 23. Print numbers from 1 to 50:
