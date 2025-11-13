@@ -24,6 +24,11 @@
 ## 3. **Data Input / Output**
 | Sub-topic | Key Points |
 |-----------|------------|
+| **Flat Files** | `read_csv`, `to_csv`, `read_table`, `read_fwf` |
+| **Excel** | `read_excel`, `ExcelWriter`, `to_excel` |
+| **JSON** | `read_json`, `to_json` (orient options) |
+| **SQL** | `read_sql`, `to_sql`, SQLAlchemy engine |
+| **Clipboard / HTML / SAS / Stata** | `read_clipboard`, `read_html`, etc. |
 | **Compression & Large Files** | `compression=`, `chunksize`, `iterator=True` |
 | **Feather / Parquet / HDF5** | Fast binary formats, `engine='pyarrow'` |
 
@@ -32,6 +37,8 @@
 ## 4. **Data Cleaning & Preparation**
 | Sub-topic | Key Points |
 |-----------|------------|
+| **Missing Data** | `isnull()`, `notnull()`, `dropna()`, `fillna()` (ffill/bfill, interpolation) |
+| **Duplicates** | `duplicated()`, `drop_duplicates()` |
 | **String Methods** | `.str.` accessor (lower, contains, replace, split, extract) |
 | **Type Conversion** | `astype()`, `pd.to_numeric()`, `pd.to_datetime()`, `pd.to_timedelta()` |
 | **Category Type** | `astype('category')`, `.cat` accessor |

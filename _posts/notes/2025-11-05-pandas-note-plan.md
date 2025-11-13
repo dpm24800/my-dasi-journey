@@ -6,103 +6,132 @@ date: 2025-11-05 10:12:45 +0545
 categories: note-plans
 status: draft
 ---
+## Table of Contents
+[1. Introduction to Pandas](#1-introduction-to-pandas)  
+[2. The Fundamental/Core Data Structures](#2-the-fundamentalcore-data-structures)   
+[3. Data Input and Output (I/O) Operations](#3-data-input-and-output-io-operations)    
+[4. Initial Data Inspection and Summary (Statistics) ](#4-basicinitial-data-inspection-and-summary-statistics)  
+[5. Data Selection, Indexing](#5-data-selection--indexing-and-subsetting)  
+[6. Data Cleaning preprocessing](#6-data-cleaning--preprocessingpreparation)  
+[7. Data Transformation and Manipulation](#7-data-transformation-and-manipulation)  
+[8. Data Aggregation and Grouping](#8-data-aggregation--grouping)  
+[9. Combining, merging, and concatination](#9-combining-merging-joining-and-concatenating-dataframesdatasets-data-manipulation)  
+[12. Working with Time Series](#12-working-with-time-series-and-categorical-datatime-series-analysis)  
+[15. Visualization with Pandas](#15-visualization-with-pandas)
+
+---
 
 ## 1. Introduction to Pandas
 ### What is Pandas 
-  * Definition: A fast, powerful, and flexible open-source data analysis and manipulation library for Python.
-  * Built on top of NumPy.
-### Key features and benefits
+  * Definition: 
+    * A fast, powerful, and flexible open-source data analysis and manipulation library for Python.
+    * Built on top of NumPy.
+### Key features and benefits/advantages
   - History and development
-### Key uses: and why it’s used/ primary use cases
-  * Data cleaning, transformation, analysis, and visualization preparation.
-  * data manipulation, analysis, cleaning.
-* Comparison with NumPy
+### Key uses: why it’s used/primary use cases
+  * Data cleaning, transformation, data manipulation, 
+  * analysis, and visualization preparation.
+* **Comparison with NumPy**
   * Relation to **NumPy** (Pandas is built on top of NumPy).
   * Comparison with other libraries (e.g., NumPy, Polars)
+  * Overview of Pandas ecosystem (relation to NumPy, Matplotlib, etc.)
 
-* Installation and Import 
+* Installation and Import: (using pip, conda)
   * `pip install pandas`:
   * `import pandas as pd`: 
-  * Installation and setup (using pip, conda)
+
 - Pandas data structures overview (`Series` vs/& `DataFrame`)
   * Data structures in Pandas: `Series` and `DataFrame`
-- Key features and advantages
-- Overview of Pandas ecosystem (relation to NumPy, Matplotlib, etc.)
 
 ---
 
 ## 2. The Fundamental/Core Data Structures
-### (Pandas) Series:
+### 2.1. (Pandas) Series:
   * One-dimensional labeled array.
-  * Creation: from list, dictionary, NumPy array.
+  * Creating Series: 
+    * from lists, dictionaries, NumPy arrays, scalar values
   * Anatomy: Index and Values.
-  * Key attributes: `.index`, `.values`, `.dtype`, `.name`.
+  * Key attributes: 
+    * `.index`: 
+    * `.values`: 
+    * `.dtype`: 
+    * `.name`: 
+    * shape
   +++  
-  - Creating Series: from lists, dictionaries, NumPy arrays
   - Indexing and index objects
-  - Series attributes (index, values, dtype, name, shape)
   - Vectorized operations
   - Boolean indexing with Series
   - Handling missing values in Series
 
-### 2. Pandas Series
-* Creating a Series
-  * From lists, arrays, dictionaries, scalar values
 * Indexes and Labels
 * Accessing elements (`.loc[]`, `.iloc[]`, slicing)
 * Operations on Series
   * Arithmetic, comparison, and broadcasting
+
 * Useful Series methods
-  * `head()`, `tail()`, `describe()`, `value_counts()`, `unique()`, `nunique()`, `map()`, `apply()`
-* Handling missing values in Series (`isna()`, `fillna()`, `dropna()`)
+  * `head()`: 
+  * `tail()`: 
+  * `describe()`: 
+  * `value_counts()`: 
+  * `unique()`: 
+  * `nunique()`: 
+  * `map()`: 
+  * `apply()`: 
 
+* Handling missing values in Series 
+  * `isna()`: 
+  * `fillna()`: 
+  * `dropna()`: 
 
-### (Pandas) DataFrame:
-  * Two-dimensional labeled data structure (like a spreadsheet or SQL table).
-  * Creation: from dict of Series/lists, list of dicts, NumPy array, from a file (e.g., CSV, Excel).
-  * Anatomy: Index, Columns, and Data.
-  * Key attributes: `.index`, `.columns`, `.dtypes`, `.shape`, `.info()`, `.head()`, `.tail()`.
-  +++  
-- Creating DataFrames from:
+### 2.2. (Pandas) DataFrame:
+* Two-dimensional labeled data structure (like a spreadsheet or SQL table).
+
+* Creating DataFrames from:
+  - From dicts
+  - from dict of Series/lists, 
+  - list of dicts, List of dictionaries
+  - NumPy arrays, 
+  - from a file (e.g., CSV, Excel).CSV/Excel files
   - Dictionaries of lists/Series
-  - List of dictionaries
-  - NumPy arrays
-  - CSV, Excel files
   - External databases
-- DataFrame anatomy (index, columns, data)
-- Essential attributes:
-  - `.index`, `.columns`, `.dtypes`
-  - `.shape`, `.size`, `.ndim`
-  - `.values`, `.axes`
-- Essential methods:
-  - `.info()`, `.describe()`
-  - `.head()`, `.tail()`, `.sample()`
 
-### 3. Pandas DataFrame
-* Creating DataFrames
-  * From dicts, lists of dicts, NumPy arrays, CSV/Excel files
-* DataFrame structure: rows, columns, index, dtypes
-* Accessing data
-  * Selecting columns (`df['col']`), rows (`.loc[]`, `.iloc[]`), slices
-* Adding, modifying, and deleting columns/rows
-* Renaming columns or indexes (`rename()`)
-* Copying vs referencing (`copy(deep=True)`)
+* DataFrame Anatomy: DataFrame structure:
+  * Index
+  * Columns, 
+  * and Data.
+
+* Key/Essential attributes: 
+  * `.index`: 
+  * `.columns`: 
+  * `.axes`:
+  * `.dtypes`: 
+  * `.shape`: 
+  * `.size`: 
+  - `.ndim`: 
+  - `.values`:  
+- Essential methods:
+  - `.info()`: 
+  - `.describe()`:
+  - `.head()`: 
+  - `.tail()`: 
+  - `.sample()`: 
 
 ---
 
-## 3. Data Input and Output (I/O) Operations
-### Reading data: from various sources/formats (common file types)
-  * `pd.read_csv()`: # key parameters: sep, header, index_col, usecols, dtype; Parameters like sep, header, index_col, dtype
-  * `pd.read_excel()`: # sheet_name, engine; from Excel; Sheet selection, multi-sheet handling
-  * `pd.read_json()`: # orient, lines; from JSON; Orientation options
-  * `pd.read_html()`: # web scraping; HTML tables
-  * `pd.read_sql()`: # sql, con; Queries, connections
-  * `pd.read_clipboard()`: from Clipboard; Clipboard
-  * `pd.read_table()`: from Flat Files?? with `read_csv`
-  * From URLs.
-  * Parquet, HDF5, Feather, and other efficient formats
+## 3. Data Input and Output: (I/O) Operations
+### 3.1. Reading data: from various sources/formats
+* `pd.read_csv()`: # key parameters: sep, header, index_col, usecols, dtype; Parameters like sep, header, index_col, dtype
+* `pd.read_excel()`: # sheet_name, engine; from Excel; Sheet selection, multi-sheet handling
+* `pd.read_json()`: # orient, lines; from JSON; Orientation options
+* `pd.read_html()`: # web scraping; HTML tables
+* `pd.read_sql()`: # sql, con; Queries, connections;  SQLAlchemy engine |
+* `pd.read_clipboard()`: from Clipboard; Clipboard
+* `pd.read_table()`: from Flat Files??
+* `read_fwf`: 
+* From URLs.
+* Parquet, HDF5, Feather, and other efficient formats
 
-#### Important Parameters for reading:
+* Important Parameters for reading:
   - `index_col`: 
   - `header`: 
   - `usecols`: 
@@ -111,83 +140,55 @@ status: draft
   - `dtype`:  
   - `nrows`: 
 
-### Writing Data: to files
-  * `df.to_csv()`:  # index=False, header, encoding; (important: `index=False`); Parameters like index, header, mode
-  * `df.to_excel()`: # sheet_name, index; Multi-sheet writing with ExcelWriter
-  * `df.to_sql()`: writing to a database; Handling if_exists, chunksize
-  * `df.to_json()`: # orient; Orientation (split, records, etc.)
-  * `df.to_parquet()`: # efficient storage; efficient binary format, highly recommended for large datasets.
-* Parameters for performance and memory optimization
+### 3.2. Writing Data: to files
+* `df.to_csv()`:  # index=False, header, encoding; (important: `index=False`); Parameters like index, header, mode
+* `df.to_excel()`: # `sheet_name`, `index`; 
+* `ExcelWriter`: Multi-sheet writing with ExcelWriter
+* `df.to_sql()`: writing to a database; Handling if_exists, chunksize;  SQLAlchemy engine
+* `df.to_json()`: # `orient`; Orientation (split, records, etc.)
+* `df.to_parquet()`: # efficient storage; efficient binary format, highly recommended for large datasets.
+
 * Key **parameters** for writing:
-  * (e.g., `index=False`, `header=False`, `sheet_name`).
+  * `index=False`:
+  * `header=False`:
+  * `sheet_name`):
+  * `mode`
 * Handling large datasets: Chunking, iterators
+* Parameters for performance and memory optimization
 
 ---
 
-## 4. Data Inspection and Summary (Statistics)
-### Basic Inspection/Initial Data Inspection
+## 4. Basic/Initial Data Inspection and Summary (Statistics)
+* **Initial Review:** Checking basic info: Viewing data: 
+  * `df.head()`:  
+  * `df.tail()`:
+  * `df.sample()`: sampling; see random parts of your data
 
-* **Initial Review:**
-    * Viewing data: `.head()`, `.tail()`.
-    * Concise summary: `.info()` (data types, non-null values, memory usage).
-    * `.describe()`: Descriptive statistics (count, mean, std, min, max, quartiles).
-    * Column value counts: `.value_counts()`.
-    * `.sample()`: 
-* **Data Types:**
-    * Checking types: `.dtypes`.
-    * Converting types: `.astype()`.
-    * Understanding common Pandas dtypes (`int64`, `float64`, `object`, `category`, etc.).
+  * `df.info()`: comprehensive overview; Concise summary: 
+    * (data types, entries, columns, Dtype/Data types, non-null counts, memory usage).
+  * `df.describe()`: 
+    * Summary statistics for numerical columns; (include/exclude parameters)
+    * Descriptive statistics (count, mean, std, min, max, quartiles).
 
-
-* Checking basic info: 
-  * `df.info()`: comprehensive overview; Data types and non-null counts.
-  * `df.describe()`: Summary statistics for numerical columns.
+  * `df.value_counts()`: column value counts
   * `df.shape`: Dimensions of the DataFrame.
   * `df.columns`: List of column names.
-  * `df.index`:
-  * `df.dtypes`: Data types of each column.
-  * Shape, size, and info (
-  * .shape: 
-  * .memory_usage()
+  * `df.index`: 
+  * `df.axes`: 
+  * `df.shape`: Shape
+  * `df.size`: size
+  * `df.memory_usage()`: memory consumption
 
-* Detecting duplicates:
-  * `duplicated()`: 
-  * `drop_duplicates()`: 
-
-- `.describe()` - summary stats (include/exclude parameters)
-- `.memory_usage()` - memory consumption
-
-* Checking for missing data: 
-  * `isnull()`:
-  - `.isnull().sum()` - missing value counts; Count of missing values per column.
-  * `notnull()`
-
-### Statistical Methods/Descriptive statistics
-- `describe()`: Summary statistics for numerical columns.?? 
-- `sum()`: 
-- Central tendency: `.mean()`, `.median()`, `.mode()`
-- Dispersion: `.std()`, `.var()`, `.mad()`
-- Extremes: `.min()`, `.max()`
-- Quantiles: `.quantile()`, `.percentile()`
-- Counts: 
-  - `.count()`: 
-  - `.value_counts()`: For categorical columns.
-  - `.nunique()`:
+* **Data Types:**
+  * `df.dtypes`: Data types of each column; checking types
+  * `.astype()`: converting types
+  * Understanding common Pandas dtypes 
+    * (`int64`, `float64`, `object`, `category`, etc.).
 
 ---
 
-## 5. Data Selection and Filtering/
-## 5. Data Selection & Indexing and Subsetting
+## 5. Data Selection & Indexing, Subsetting/Slicing and Filtering
 *This is a critical section. Understand the difference between `[]`, `.loc[]`, and `.iloc[]`.*
-
-
-* Conditional selection (`df[df['col'] > value]`)
-* `query()` method
-* Multi-condition filtering with `&`, `|`, `~`
-* Selecting subsets of rows and columns
-* `isin()`, `between()`, `where()`, `mask()`
-
----
 * **Basic Selection:**
     * Selecting columns (as Series and as a DataFrame subset).
     * Selecting rows using list slicing (`df[10:20]`).
@@ -201,29 +202,29 @@ status: draft
     * Working with **MultiIndex** (Hierarchical Indexing).
 ---
 
+* Accessing data
+  * Selecting columns (`df['col']`), rows (`.loc[]`, `.iloc[]`), slices
 
-### Column Selection/Selecting Columns
-- Single column: `df['col']` (Series) vs `df[['col']]` (DataFrame)
-- Multiple columns: `df[['col1', 'col2']]`
-- Column attributes: `df.columns`
-- Renaming columns: `.rename(columns={})`
+* Copying vs referencing (`copy(deep=True)`)
 
-* Single column as Series: `df['column_name']`
-* Single column as DataFrame: `df[['column_name']]`
-* Multiple columns: `df[['col1', 'col2']]`
+### Column Selection: selecting columns
+- `df.columns`: Column attributes
+- `df['col']` (Series) vs 
+- `df[['col']]` (DataFrame): Single column
+- `df[['col1', 'col2']]`: Multiple columns
+- `df['column_name']`: Single column as Series
+- `df[['column_name']]`: Single column as DataFrame
+- `df[['col1', 'col2']]`: Multiple columns
+- `.rename(columns={})`: Renaming columns
 
-### Row Selection/Selecting Rows
-#### By label/index: `.loc[]` (label-based)
-  - Single row: `df.loc['label']`
-  - Multiple rows: `df.loc[['label1', 'label2']]`
-  - Slicing: `df.loc['start':'end']` (inclusive)
-  - Boolean indexing: `df.loc[df['age'] > 30]`
+### Row Selection: selecting rows
+#### By label/index: `.loc[]` (label-based indexing)
+- `df.loc['index_label']`: Single row
+- `df.loc[['label1', 'label2']]`: Multiple rows
+- `df.loc['start':'end']` (inclusive): Slicing: Slicing with labels
+* `df.loc['label1':'label3']` (inclusive!)
 
- * Single row: `df.loc['index_label']`
- * Multiple rows: `df.loc[['label1', 'label2']]`
- * Slicing with labels: `df.loc['label1':'label3']` (inclusive!)
-
-#### By integer position: `.iloc[]` (position-based)
+#### By integer position: (position-based indexing)`.iloc[]` 
   - Single row: `df.iloc[0]`
   - Multiple rows: `df.iloc[[0, 2, 4]]`
   - Slicing: `df.iloc[0:5]` (exclusive)
@@ -231,59 +232,114 @@ status: draft
   - Multiple rows: `df.iloc[[0, 2, 4]]`
   - Slicing with integers: `df.iloc[0:5]` (exclusive of the stop index)
 
-* By boolean indexing (filtering): `df[df['age'] > 30]`
-- **Boolean Indexing**
-  - Single condition: `df[df['age'] > 30]`
-  - Multiple conditions: `(df['age'] > 30) & (df['city'] == 'NYC')`
-  - `.isin()` method
-  - `.query()` method for complex filtering
+#### Boolean Indexing/Filtering Data/Conditional selection 
+- Single condition
+  - `df[df['col'] <opearator> value]`: 
+    - `df[df['age'] > 30]`: 
+    - `df.loc[df['age'] > 30]`:
+* Multi-condition filtering with `&`, `|`, `~`:
+* Boolean indexing with multiple conditions (`&`, `|`, `~`).
+  - `(df['age'] > 30) & (df['city'] == 'NYC')`: Multiple conditions
+- `.isin()` method
+* Using `.isin([list])`.
+- `.query()` method for complex filtering
+  * Using `.query()` method.
 
-### Combined Selection/Selecting Subsets (Rows and Columns): Subsetting
-- `df.loc[row_labels, col_labels]`
-- `df.iloc[row_positions, col_positions]`
-- `df.at[]` and `df.iat[]` for scalar access
+- Boolean indexing with multiple categories
+* Using `.str` methods for text filtering.
 
+### Combined Selection/Selecting Subsets (of Rows and Columns)/Subsetting
+- `df.loc[row_labels, col_labels]`:
+- `df.iloc[row_positions, col_positions]`:
 * Using `.loc[]`: `df.loc[rows_selection, columns_selection]`
   * Example: `df.loc[df['age'] > 25, ['name', 'city']]`
 * Using `.iloc[]`: `df.iloc[row_indices, column_indices]`
   * Example: `df.iloc[0:5, [1, 3]]`
+- `df.at[]` and `df.iat[]` for scalar access
+
+* `isin()`, `between()`, `where()`, `mask()`
 
 ---
 
-## 5. Data Cleaning & Preprocessing
-* Handling missing data (`fillna()`, `dropna()`, `interpolate()`)
-* Replacing values (`replace()`)
-* Changing data types (`astype()`)
-* Renaming columns or indexes (`rename()`)
-* String operations (`str.upper()`, `str.contains()`, etc.)
-* Handling outliers
-* Dropping or filling NaNs conditionally
-
-### Handling Missing Data
-- Detecting/Identifying missing values:
+## 6. Data Cleaning & Preprocessing: Preparation
+### 6.1. Handling Missing Data: [done]
+- Detecting/identifying/checking missing values/data:
   - `.isna()`: 
   - `.isnull()`: 
   - `.notna()`: 
   - `.notnull()`: 
 - Counting: 
-  - `.isnull().sum()`, 
-  - `.isnull().mean()`
+  - `.isnull().sum()`: missing value counts; Count of missing values per column.
+  - `.isnull().mean()`: 
 - Dropping missing values: 
-  - `.dropna()` (axis, how, thresh, subset)
-  - `.dropna()` (how='any'/'all', axis, thresh, subset)
-  - `.dropna()` (rows/columns, parameters like `how='all'`, `subset`).
+  - `.dropna()`: 
+    - (axis, how, thresh, subset)
+    - (how='any'/'all', axis, thresh, subset)
+    - (rows/columns, parameters like `how='all'`, `subset`).
 - Filling missing values: 
-  - `.fillna()` (value, method='ffill'/'bfill', limit)
-  - `.fillna()` (with a scalar, mean/median/mode, or forward fill `ffill` and backward fill `bfill`)
+  - `.fillna()`:
+    - e.g. `df.fillna(0)`, `df['balance'].fillna(df['balance'].mean())` 
+    - (value, method='ffill'/'bfill', limit) ; 
+    - (ffill/bfill, interpolation) 
+    - (with a scalar, mean/median/mode, or forward fill `ffill` and backward fill `bfill`)
 - Interpolation: 
-  - `.interpolate()` (method, limit_direction)
+  - `.interpolate()`: (method, limit_direction)
+- Dropping or filling NaNs conditionally
 
-### Handling Duplicates/duplicate data
-- Detection/identifying duplicates: `.duplicated()` (subset, keep)
-- Removal/Dropping duplicates: `.drop_duplicates()` (subset, keep='first'/'last'/False)
-- Counting duplicates
+### 6.2. Handling Duplicates/duplicate data: [done]
+- `.duplicated()`: Detecting/identifying duplicates:
+  - (subset, keep)
+- `.duplicated().sum()`: Counting duplicates
+- `.drop_duplicates()`: Removal/Dropping duplicates
+  - (subset, keep='first'/'last'/False)
 
-### Data Type Conversion
+### 6.3. Column Operations: Adding, Renaming/modifying and Dropping  
+- **Adding columns**: [done]
+  - `df['new'] = values`:
+  - `df['new_col'] = ...`: Add [done]
+  - `df.assign()`: Adding columns: 
+    * `df.assign(new_col=...)`: Add
+
+- **Renaming columns**: `.rename()` [done]
+  * `df.rename(columns={'old':'new', 'old':'new'})`: 
+
+- **Dropping columns/index**: `df.drop()`
+  - `df.drop(columns=[])`: 
+  * `df.drop(columns=['col1', 'col2'])`:
+  * `df.drop(['col1'], axis=1)`:
+    * `df.drop(columns={'full_name', 'balance'})` #
+    * `df.drop(['name'])` ??
+
+- **Modifying data/values:**
+  * `.replace()`: replacing values
+    * `df['l_name'] = df['l_name'].replace({'Tamang':'Lama', np.nan: 'Nepali'})`
+    * `df['priority'] = df['priority'].replace({'yes': True, 'no': False})`
+  * `.map()`: mapping values
+    * `df['l_name'] = df['l_name'].replace({'Tamang':'Lama', np.nan: 'Nepali'})`
+    * `df['priority'] = df['priority'].replace({'yes': True, 'no': False})`
+
+### 6.4 Index/Row Operations: [done]
+- **Adding an Index**: #Adding new index/row in pandas
+  - `df.loc['k'] = ['rabbit', 4, 2, 'yes']`
+  - Adding multiple indexes: using `.concat()`
+- **Rename index(s)/row(s)**
+  - `df.rename({2:20, 3:30})` ---> rename index 2 and 3 to 20 and 30
+  - `df.rename({2:20, 3:30}, axis=0)`
+  - `df.rename(index={2:20, 3:30})`
+  - `df.rename({'a':'A', 'b':'B'})`
+- **Drop index(s)/row(s)**:
+  - `df.drop(4)` 
+  - `df.drop(5, axis=0)` # axis=0, optional/default
+  - `df.drop([6, 7, 8], axis=0)`
+  - `df.drop('k', axis=0)`
+  - `df.drop(['c', 'd', 'e'], axis=0)`
+
+- **Changing a Value**: 
+  - `df.loc['f', 'age'] = 1.5`
+
+* Handling outliers
+
+### Data Type Conversion/Changing Data Types: See basic/initial
 - `.astype()` - basic type conversion; for simple conversions (e.g., `df['col'].astype('int32')`)
 - `pd.to_numeric()` - with error handling; more robust, handles errors (`errors='coerce'`)
 - `pd.to_datetime()` - date parsing; convert to datetime.
@@ -293,94 +349,95 @@ status: draft
 ### String Operations
 - String accessor: `.str`
 - Common methods:
-  - Case: `str.lower()`, `str.upper()`, `.title()`
-  - Searching: `.contains()`, `.startswith()`, `.endswith()`
-  - Manipulation: `.replace()`, `.strip()`, `.split()`, `.extract()`
-  - Information: `.len()`, `.find()`
-  - `.str.lower()`, `.str.upper()`, `.str.contains()`, `.str.replace()`, `.str.split()`, `.str.strip()`, `.str.len()`
-
-### Column Operations: Renaming, Adding, and Dropping Columns  
-
-- Adding columns: `df['new'] = values` or `.assign()`
-- Dropping columns: `.drop(columns=[])`
-- Renaming columns/index (`.rename()`): `.rename(columns={})`
-- Reordering: column selection or `.reindex()`
-
-* Rename: `df.rename(columns={'old':'new'})`
-* Add: `df['new_col'] = ...` or `df.assign(new_col=...)`
-* Drop: `df.drop(columns=['col1', 'col2'])` or `df.drop(['col1'], axis=1)`
-
-#### (Renaming and Modifying)
-  * Renaming columns/index: **`.rename()`**.
-  * Mapping and replacing values: `.replace()`, `.map()`.
+  - Case: 
+    - `str.lower()`, 
+    - `str.upper()`, 
+    - `stritle()`
+  - Searching: 
+    - `str.contains()`, 
+    - `str.startswith()`, 
+    - `str.endswith()`
+  - Manipulation: 
+    - `str.replace()`, 
+    - `str.strip()`, 
+    - `str.split()`, 
+    - `str.extract()`
+  - Information: 
+    - `.len()`, 
+    - `.find()`
 
 ---
 
-## 7. Data Transformation (and Manipulation)
-* Applying functions (`apply()`, `applymap()`, `map()`)
-* Lambda functions
-* Vectorized operations
-* Sorting (`sort_values()`, `sort_index()`)
+## 7. Data Transformation and Manipulation
+
+### 7.1. Sorting
+- Sorting by index:
+  - `.sort_index()` (ascending, inplace)ascending, na_position)
+- Sorting by values: ascending, na_position)
+  - `.sort_values()` (by, ascending, na_position)
+  - `df3 = df.sort_values('visits')` # default: ascending=True
+  - `df2 = df.sort_values('age', ascending=False)`
+  - `df.sort_values(by=['col1', 'col2'], ascending=[False, True])` (multiple columns)
+    - `df4 = df.sort_values(by=['age', 'visits'], ascending=[False, True])` # can be more than two
 * Reindexing (`reindex()`)
+* `.reindex()`: Reordering: column selection or 
 * Changing column order
 
-
-### Sorting
-- Sorting by index:
-  - `.sort_index()` (ascending, inplace)
-- Sorting by values:
-  - `.sort_values()` (by, ascending, na_position)
-  - `.sort_values(by='col1', ascending=[False])` (multiple columns)
-
-### Applying Functions
-- **`.map()`** - element-wise Series transformation
-- **`.apply()`** - row/column-wise DataFrame operations
-- **`.applymap()`** - element-wise on entire DataFrame
-- **Vectorized operations** - preferred for performance
-- **Lambda functions** with apply
-
-* `map()` - Element-wise transformation on a Series.
-* `apply()` - Row-wise or column-wise transformation on a DataFrame. More flexible, but slower.
-* `applymap()` - Element-wise on a whole DataFrame (less common).
-* **Vectorized operations are preferred for performance.**
-
+### 7.2. Applying Functions
+- `.map()` - element-wise Series transformation; Element-wise transformation on a Series.
+- `.apply()` - row/column-wise DataFrame operations; Row-wise or column-wise transformation on a DataFrame. More flexible, but slower.
+- `.applymap()` - element-wise on entire DataFrame; Element-wise on a whole DataFrame (less common).
 * Applying Functions:
     * Element-wise operations: Using NumPy functions or lambda functions with **`.apply()`** on a Series.
     * Row-wise or Column-wise operations: Using **`.apply()`** with `axis=0` or `axis=1`.
-
+* **Vectorized operations** are preferred for performance.
+- **Lambda functions** with apply
 
 ### Binning & Discretization
 - `pd.cut()` - equal-sized bins
 - `pd.qcut()` - quantile-based bins
-- Boolean indexing with multiple categories
 
-2.  Filtering Data
-  * Boolean indexing with multiple conditions (`&`, `|`, `~`).
-  * Using `.isin([list])`.
-  * Using `.str` methods for text filtering.
-  * Using `.query()` method.
 ---
 
-## 8. Data Aggregation & Grouping: Grouping and Aggregation
-* `groupby()` basics
-* Aggregation functions (`sum()`, `mean()`, `count()`, `agg()`)
+## 8. Data Aggregation & Grouping
+### Basic/Simple Aggregation: Statistical Methods/Descriptive statistics
+- **Single function**: 
+  - `describe()`: Summary statistics for numerical columns.?? 
+  - `sum()`:
+  - Counts: 
+    - `.count()`: 
+    - `.value_counts()`: For categorical columns.
+    - `.nunique()`:
+  - Extremes: 
+    - `.min()`: 
+    - `.max()`:
+  - Central tendency:
+    - `.mean()`: 
+    - `.median()`: 
+    - `.mode()`: 
+  - Dispersion: 
+    - `.std()`: 
+    - `.var()`: 
+    - `.mad()`:
+  - Quantiles: 
+    - `.quantile()`: 
+    - `.percentile()`: 
+- **Multiple functions**: 
+  - `.agg(['mean', 'std', 'count'])`
+- **Column-specific**: 
+  - `.agg({'col1': 'mean', 'col2': ['min', 'max']})`
+
 * Grouping by multiple columns
 * Iterating over groups
 * Transformations (`transform()`)
 * Pivot tables (`pivot_table()`)
 * Cross-tabulation (`pd.crosstab()`)
 
-### Basic/Simple Aggregation
-- Single function: `.sum()`, `.mean()`, `.count()`
-- Multiple functions: `.agg(['mean', 'std', 'count'])`
-- Column-specific: `.agg({'col1': 'mean', 'col2': ['min', 'max']})`
-- `.sum()`, `.mean()`, `.median()`, `.std()`, `.min()`, `.max()`, `.count()`, `.describe()`
-
-### GroupBy Operations
+### GroupBy Operations: Grouping Basics
 - **Split-Apply-Combine pattern**
-  - Single column grouping: `.groupby('col')`
-  - Multiple columns: `.groupby(['col1', 'col2'])`
-  - Grouping with functions: `.groupby(lambda x: x.year)`
+  - `.groupby('col')`: Single column grouping
+  - `.groupby(['col1', 'col2']`: Multiple columns
+  - `.groupby(lambda x: x.year)`: Grouping with functions
 
 1.  **The `groupby` Mechanism**
     * Concept: Split-Apply-Combine.
@@ -399,8 +456,6 @@ status: draft
     * The **Split-Apply-Combine** strategy.
     * Using **`.groupby()`** and common aggregation functions (e.g., `.mean()`, `.sum()`, `.count()`, `.agg()`).
 
-
-
 ### Advanced Grouping: Pivot Tables & Cross-Tabulation
 - `.agg()` with custom functions
 - Named aggregation with tuples
@@ -410,49 +465,37 @@ status: draft
 - `pd.crosstab()` - For computing a simple frequency table.
 
 ---
-## Data Manipulation??
-## 9. Combining (Merging, Joining, and Concatenating) DataFrames
-## 9. Combining DataSets
 
-### **Concatenation**
-- `pd.concat()` - axis (0/1), join, ignore_index, keys
+## 9. Combining DataFrames/DataSets: Data Manipulation??
+### 9.1. Concatinating DataFrames (stacking/side-by-side): `pd.concat()`
+- Key parameters: `axis=0/1`, `join='inner'/'outer'`, ignore_index, keys
 - Row-wise vs column-wise concatenation
+  * `axis=0` (row-wise, stacking), 
+  * `axis=1` (column-wise, side-by-side).
+* join
 
-* **Concatenation (`pd.concat()`)**
-  * `axis=0` (row-wise, stacking), `axis=1` (column-wise, side-by-side).
-  * `join='inner'/'outer'`.
+### 9.2. Merging DataFrames: `pd.merge()`
+- SQL/Database-style joins
+- Join types (`how`): inner, outer, left, right, cross
+- Key parameters: `on`, `left_on`, `right_on`, `how`, `suffixes`.
+- Indicator for merge diagnostics
+
+### 9.3. Joining on indexes/index-based joining: `.join()`
 
 
 
 
+* **Difference between `merge` (general) and `join` (on index)**
+  * SQL/Database-style joins vs ____________
 
-### **Merging & Joining**
-- **`pd.merge()`** - SQL-style joins
-  - Join types: inner, left, right, outer, cross
-  - Key parameters: on, left_on, right_on, how, suffixes
-  - Indicator for merge diagnostics
-- **`.join()`** - index-based joining
 - **`.combine_first()`** - filling missing values
-
-* **Joining and Merging:**
-    * Combining DataFrames: **`pd.concat()`** (stacking/side-by-side).
-    * Database-style joins: **`pd.merge()`** (Inner, Outer, Left, Right joins, parameters like `on`, `left_on`, `right_on`).
-    * Combining on index: `.join()`.
-
-* **Merging / Joining (`pd.merge` / `df.join`)**
-  * SQL-style joins (inner, left, right, outer, cross).
-  * Key parameters: `on`, `left_on`, `right_on`, `how`, `suffixes`.
-  * Difference between `merge` (general) and `join` (on index).
-* Merging DataFrames (`pd.merge()`)
-  * Inner, Outer, Left, Right joins
-* Joining on indexes (`.join()`)
 * Combining data from multiple sources
-
 
 ---
 
-## **10. Reshaping and Pivoting**
-* `melt()` and `pivot()`
+## 10. Reshaping and Pivoting
+* `melt()`: 
+* `pivot()`: 
 * Stacking and unstacking
 * Wide vs long format
 * MultiIndex and hierarchical indexing
@@ -464,13 +507,13 @@ status: draft
 - `.stack()` and `.unstack()` - hierarchical indexing
 
 * **Reshaping Data:**
-    * Pivoting data: **`.pivot_table()`** (similar to pivot tables in spreadsheets).
-    * Melting data: `pd.melt()` (wide to long format).
-    * Stacking/Unstacking.
+  * Pivoting data: **`.pivot_table()`** (similar to pivot tables in spreadsheets).
+  * Melting data: `pd.melt()` (wide to long format).
+  * Stacking/Unstacking.
 
 ---
 
-## **11. Working with Indexes**
+## 11. Working with Indexes
 * Setting and resetting indexes (`set_index()`, `reset_index()`)
 * Hierarchical (multi-level) indexes
 * Index sorting and selection
@@ -478,43 +521,59 @@ status: draft
 
 ---
 
-## 12. (Working with) Time Series and Categorical Data
-## 12. Time Series Analysis
-* Converting to datetime (`pd.to_datetime()`)
-* **Working with DateTimeIndex**
+## 12. (Working with) Time Series and Categorical Data/Time Series Analysis
+* **Working with DateTimeIndex/DateTime Handling**
   * `pd.to_datetime()`: Converting to datetime
+  * `pd.to_datetime()` - parsing dates
   * Setting a datetime column as the index.
-  * `pd.date_range()`
+  * `pd.date_range()`: 
+  * `pd.date_range()` - generating date sequences
   * Setting a DateTimeIndex.
   * Accessing date/time components (e.g., `.dt.year`, `.dt.day_name()`).
-  * Resampling, shifting, and time zone handling.
 * Date indexing and slicing
 * **Time-Based Indexing & Slicing**
-  * Partial string indexing: `df.loc['2020']`, `df.loc['2020-01']`
+  * Partial string indexing: 
+    * `df.loc['2020']`, 
+    * `df.loc['2020-01']`
   * Slicing: `df.loc['2020-01-01':'2020-01-15']`
+  
+* Resampling, shifting, and time zone handling.
 * **Resampling** (`resample()`)
-  * Downsampling: `.resample('M').mean()` (to a lower frequency).
-  * Upsampling: `.resample('D').ffill()` (to a higher frequency).
-* Shifting and lagging (`shift()`, `tshift()`)
-* Rolling and expanding windows (`rolling()`, `expanding()`)
+  * `.resample('M').mean()`: Downsampling (to a lower frequency).
+  * `.resample('D').ffill()`: Upsampling  (to a higher frequency).
 
-### **DateTime Handling**
-- `pd.to_datetime()` - parsing dates
-- `pd.date_range()` - generating date sequences
-- DateTimeIndex properties and methods
-- Timezone handling with `tz_convert()`, `tz_localize()`
+* Shifting and lagging (
+  * `shift()`, 
+  * `tshift()`)
 
-### **Time-Based Operations**
-- Setting datetime index: `.set_index()`
-- Time-based indexing: `df.loc['2023']`, `df.loc['2023-01':'2023-03']`
-- Date properties: `.dt.year`, `.dt.month`, `.dt.day_name()`
 
 ### **Resampling & Rolling**
 - **Resampling**: `.resample()` (up/down sampling)
   - Downsampling: 'D'→'M', 'H'→'D'
   - Upsampling: 'D'→'H' with filling/interpolation
-- **Rolling operations**: `.rolling()` for moving averages
-- **Expanding operations**: `.expanding()`
+- **Rolling operations**: 
+  - `.rolling()` for moving averages
+- **Expanding operations**: 
+  - `.expanding()`
+- * Rolling and expanding windows (
+  * `rolling()`, 
+  * `expanding()`)
+
+
+- DateTimeIndex properties and methods
+- Timezone handling with 
+  - `tz_convert()`: 
+  - `tz_localize()`: 
+
+### **Time-Based Operations**
+- `.set_index()`: Setting datetime index
+- Time-based indexing: 
+  - `df.loc['2023']`, 
+  - `df.loc['2023-01':'2023-03']`
+- Date properties: 
+  - `.dt.year`, 
+  - `.dt.month`, 
+  - `.dt.day_name()`
 
 * **Categorical Data:**
     * Creating and converting to `category` dtype.
@@ -523,37 +582,30 @@ status: draft
 ---
 
 ## **14. Performance Optimization**
-* Memory usage and profiling (`memory_usage()`, `info(memory_usage='deep')`)
+* Memory usage and profiling 
+  * (`memory_usage()`: 
+  * `info(memory_usage='deep')`)
 * Using `categorical` data types
 * Vectorization over loops
 * Chunked reading of large files
 * Using `df.eval()` and `df.query()` for performance
-
-
-### **Performance Optimization**
 - Method chaining for readability
 - Vectorized operations vs apply
 - Efficient dtypes and memory usage
 - `pd.eval()` for expression evaluation
 - Using `.isin()` instead of multiple OR conditions
-
-* **Performance and Optimization:**
-    * Using optimized methods like `.at`, `.iat`, `.loc`, `.iloc` over iterative loops.
-    * The efficiency of vectorized operations over **`.apply()`** (when possible).
-    * Understanding **`copy()`** and "SettingWithCopyWarning" to avoid chained assignment issues.
-
+* Using optimized methods like `.at`, `.iat`, `.loc`, `.iloc` over iterative loops.
+* The efficiency of vectorized operations over **`.apply()`** (when possible).
+* Understanding **`copy()`** and "SettingWithCopyWarning" to avoid chained assignment issues.
 
 ---
 
-## 15. Visualization with Pandas
-* Plotting built-in (`df.plot()`, `plot(kind='bar')`, etc.)
-* Histogram, line, bar, scatter, box plots
-* Customizing plots (titles, labels, colors)
-* Integration with Matplotlib and Seaborn
-
-* **Integration with Visualization:**
-    * Basic built-in plotting: **`.plot()`** (line, bar, hist, box plots).
-    * Integration with Matplotlib and Seaborn (passing the DataFrame as data).
+## 15. Visualization (with Pandas): Integration with Visualization
+* Basic built-in plotting with (`df.plot()`, `plot(kind='bar')`, etc.)
+* Line, bar, histogram, box/box plots, scatter, area plots
+* Customizing plots: titles, labels, colors, legends
+* Subplots and multiple figures
+* Integration with Matplotlib and Seaborn (passing the DataFrame as data)
 
 ---
 
@@ -632,7 +684,6 @@ status: draft
 - Time series forecasting preparation
 - Feature engineering examples
 - Data validation and quality checks
-
 
 ### Pro-Tips for Your Notes:
 * **Code Snippets:** For every topic, include a small, clear code example.

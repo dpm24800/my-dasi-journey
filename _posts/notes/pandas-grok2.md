@@ -18,13 +18,12 @@
 
 ### Viewing and Inspecting Data
 - 
-- Descriptive statistics (.describe(), .value_counts())
-- Sampling (.sample())
 - Column and index inspection (.columns, .index, .dtypes)
 - Transposing (.T)
 
 ### Indexing, Selecting, and Filtering Data
-- Basic indexing: Label-based (.loc), position-based (.iloc), mixed (.ix deprecated)
+- Basic indexing: 
+  - Label-based (.loc), position-based (.iloc), mixed (.ix deprecated)
 - Slicing rows and columns
 - Boolean indexing and conditional selection
 - Advanced indexing: MultiIndex slicing, xs method
@@ -48,7 +47,6 @@
 - Categorical data: Creation, ordering, categories management
 
 ### Data Manipulation and Transformation
-- Sorting (.sort_values(), .sort_index(): ascending, na_position)
 - Ranking (.rank())
 - Applying functions (.apply(), .map(), .applymap())
 - Element-wise operations (arithmetic, comparison)
@@ -103,12 +101,7 @@
 - Dummy variables (.get_dummies())
 - Factorizing values (.factorize())
 
-### Visualization
-- Basic plotting with .plot()
-- Line, bar, histogram, box, scatter, area plots
-- Customization: Titles, labels, legends
-- Subplots and multiple figures
-- Integration with Matplotlib, Seaborn
+
 
 ### Best Practices and Common Pitfalls
 - Avoiding chained assignment warnings
