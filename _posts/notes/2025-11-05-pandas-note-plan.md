@@ -250,13 +250,22 @@ status: draft
 
 ### Combined Selection/Selecting Subsets (of Rows and Columns)/Subsetting
 - `df.loc[row_labels, col_labels]`:
+  - `df.loc[3,'weight']`
+  - `df.loc[3,'weight'] = 50`
 - `df.iloc[row_positions, col_positions]`:
-* Using `.loc[]`: `df.loc[rows_selection, columns_selection]`
-  * Example: `df.loc[df['age'] > 25, ['name', 'city']]`
-* Using `.iloc[]`: `df.iloc[row_indices, column_indices]`
-  * Example: `df.iloc[0:5, [1, 3]]`
-- `df.at[]` and `df.iat[]` for scalar access
+  - `df.iloc[3,'weight'] = 50`
 
+
+* Using `.loc[]`: 
+  * `df.loc[rows_selection, columns_selection]`
+    * `df.loc[df['age'] > 25, ['name', 'city']]`
+* Using `.iloc[]`: 
+  * `df.iloc[row_indices, column_indices]`
+  * `df.iloc[3, 3]`
+  * `df.iloc[3, 3] = 50` ---> change values of [3,3] to 50
+  * Example: `df.iloc[0:5, [1, 3]]`
+
+- `df.at[]` and `df.iat[]` for scalar access
 * `isin()`, `between()`, `where()`, `mask()`
 
 ---
@@ -312,7 +321,7 @@ status: draft
 
 - **Modifying data/values:**
   * `.replace()`: replacing values
-    * `df['l_name'] = df['l_name'].replace({'Tamang':'Lama', np.nan: 'Nepali'})`
+    * `df['l_name'] = df['l_name'].replace({'Tamang':'Lama', np.nan: 'Nepali'})` --->
     * `df['priority'] = df['priority'].replace({'yes': True, 'no': False})`
   * `.map()`: mapping values
     * `df['l_name'] = df['l_name'].replace({'Tamang':'Lama', np.nan: 'Nepali'})`

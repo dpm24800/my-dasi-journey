@@ -7,6 +7,16 @@ img{
     align-items: center;
 }
 
+.highlighter-rouge .highlight {
+    background: #212e37; // #212e47
+    border-radius: 10px;
+}
+
+
+pre, code{
+  background: #212e37;
+}
+
 
 hr{
   margin: 13px 0;
