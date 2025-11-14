@@ -43,7 +43,7 @@ print(df)
 
 ---
 
-### ✅ 2. **Using `notna()`**
+### 2. **Using `notna()`**
 
 ```python
 print(df.notna())

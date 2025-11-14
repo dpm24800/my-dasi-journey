@@ -95,19 +95,19 @@ That means both functions **point to the same underlying implementation**.
 
 | Feature                    | `isna()`  | `isnull()` | Same? |
 | -------------------------- | --------- | ---------- | ----- |
-| Detects NaN / None / NaT   | ✅         | ✅          | ✅     |
-| Works on Series            | ✅         | ✅          | ✅     |
-| Works on DataFrame         | ✅         | ✅          | ✅     |
-| Introduced for readability | ✅ (newer) | Legacy     | ✅     |
-| Preferred in documentation | ✅         |            |       |
+| Detects NaN / None / NaT   | ✅         | ✅       | ✅     |
+| Works on Series            | ✅         | ✅       | ✅     |
+| Works on DataFrame         | ✅         | ✅       | ✅     |
+| Introduced for readability | ✅ (newer) | Legacy    | ✅     |
+| Preferred in documentation | ✅         |           |       |
 
 ---
 
 ### **Conclusion**
 
-* ✅ `isna()` = `isnull()`
-* ✅ Both detect missing values.
-* ✅ Use `isna()` for modern, clean, and consistent code.
+* `isna()` = `isnull()`
+* Both detect missing values.
+* Use `isna()` for modern, clean, and consistent code.
 
 ---
 

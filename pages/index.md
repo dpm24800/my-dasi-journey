@@ -18,7 +18,6 @@ This site reflects a journey of both **intellectual growth** and **inner underst
 ---
 
 ## Introduction  
-
 I document my ongoing exploration of **Data Science**, **Machine Learning**, and **Artificial Intelligence**, sharing structured notes, tutorials, and reflections from my daily learning.  
 
 Alongside, I write about **Dhamma**, **mindfulness**, and **life lessons**, blending logic with wisdom — exploring how **clarity in thought** and **peace in mind** are deeply connected.  
@@ -26,26 +25,25 @@ Alongside, I write about **Dhamma**, **mindfulness**, and **life lessons**, blen
 ---
 
 ## Featured Categories  
-
-- [**Data Science & AI**](/the-path/category/data-science/)  
-- [**Machine Learning Notes**](/the-path/category/machine-learning/)  
-- [**Python Tutorials**](/the-path/category/python/)  
-- [**Dhamma Reflections**](/the-path/category/dhamma/)  
-- [**Poetic Writings**](/the-path/category/poetry/)  
+- [**Data Science & AI**](/dsai/)  
+<!-- - [**Machine Learning Notes**](/the-path/category/machine-learning/)   -->
+- [**Python Series**](/dsai/#python)  
+- [**NumPy Series**](/dsai/#numpy)  
+- [**Pandas Series**](/dsai/#pandas) 
+<!-- - [**Dhamma Reflections**](/the-path/category/dhamma/)  -->
+<!-- - - [**Poetic Writings**](/the-path/category/poetry/)   -->
 
 ---
 
 ## Connect with Me  
-
 - [GitHub](https://github.com/dpm24800)  
 - [LinkedIn](https://www.linkedin.com/in/dpm24800/)  
-- [Facebook](https://www.facebook.com/dpm24800)  
-- [My Blog Feed](/the-path/feed.xml)  
+- [Facebook](https://www.facebook.com/dpm.dh24800)  
+<!-- - [My Blog Feed](/the-path/feed.xml)   -->
 
 ---
 
 ## Poetic Thought  
-
 > “The mind is like a sky — vast, open, and clear.  
 > Thoughts and emotions are clouds; they come and go,  
 > but the sky remains unchanged.”  
