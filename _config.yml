@@ -26,6 +26,8 @@ facebook_username: dpm.dh24800
 # - username: jekyll2
 #   instance: example.com
 
+baseurl: "/the-path" # the subpath of your site, e.g. /blog
+url: "https://dpm24800.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 show_excerpts: false # set to true to show excerpts on the homepage
 
 # Minima date format
