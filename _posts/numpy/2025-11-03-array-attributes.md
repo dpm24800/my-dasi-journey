@@ -5,7 +5,7 @@ date:   2025-11-03 21:12:45 +0545
 categories: numpy
 ---
 <div class="image-thumbnail">
-    <img class="thumbnail" src="../../../../assets/numpy-logo.png">
+    <img class="thumbnail" src="../../../../assets/images/numpy-logo.png">
 </div>
 
 **Table of Contents**:

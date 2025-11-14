@@ -2,7 +2,7 @@
 layout: post
 title:  100 Pandas Puzzles – 1
 description: 
-thumbnail: ../../../../../assets/swivt-tests/pandas-puzzles.png
+thumbnail: ../../../../../assets/images/swivt-tests/pandas-puzzles.png
 author: Dipak Pulami Magar
 date:   2025-11-13 10:12:45 +0545
 categories: test pandas

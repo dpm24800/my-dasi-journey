@@ -6,7 +6,7 @@ author: Dipak Pulami Magar
 categories: numpy
 ---
 <div class="image-thumbnail">
-    <img class="thumbnail" src="../../../../assets/numpy-logo.png">
+    <img class="thumbnail" src="../../../../assets/images/numpy-logo.png">
 </div>
 
 <!-- ## Table of Contents

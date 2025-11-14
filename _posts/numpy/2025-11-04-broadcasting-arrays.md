@@ -6,7 +6,7 @@ categories: numpy
 ---
 <center>
 <!-- ![numpy-logo](../../../../assets/numpy-logo.png) -->
-<img src="../../../../assets/numpy-logo.png">
+<img src="../../../../assets/images/numpy-logo.png">
 </center>
 
 ## What Is Broadcasting?

@@ -2,7 +2,7 @@
 layout: post
 title:  "Creating Arrays – NumPy"
 date:   2025-11-02 20:40:45 +0545
-thumbnail: ../../../../assets/numpy-logo.png
+thumbnail: ../../../../assets/images/numpy-logo.png
 author: Dipak Pulami Magar
 categories: numpy
 ---
