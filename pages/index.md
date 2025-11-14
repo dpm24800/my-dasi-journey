@@ -25,11 +25,11 @@ Alongside, I write about **Dhamma**, **mindfulness**, and **life lessons**, blen
 ---
 
 ## Featured Categories  
-- [**Data Science & AI**](/dsai/)  
+- [**Data Science & AI**](/the-path/dsai/)  
 <!-- - [**Machine Learning Notes**](/the-path/category/machine-learning/)   -->
-- [**Python Series**](/dsai/#python)  
-- [**NumPy Series**](/dsai/#numpy)  
-- [**Pandas Series**](/dsai/#pandas) 
+- [**Python Series**](/the-path/dsai/#python)  
+- [**NumPy Series**](/the-path/dsai/#numpy)  
+- [**Pandas Series**](/the-path/dsai/#pandas) 
 <!-- - [**Dhamma Reflections**](/the-path/category/dhamma/)  -->
 <!-- - - [**Poetic Writings**](/the-path/category/poetry/)   -->
 
