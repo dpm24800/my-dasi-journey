@@ -2,7 +2,7 @@
 layout: post
 title:  Covariance — Statistics & NumPy
 description: Measuring How Two Variables Move Together
-thumbnail: ../../../../../assets/Covar.png
+thumbnail: ../../../../../assets/images/Covar.png
 author: Dipak Pulami Magar
 date:   2025-11-06 10:12:45 +0545
 categories: numpy stats
