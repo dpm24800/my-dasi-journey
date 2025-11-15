@@ -40,6 +40,7 @@ If you share the same passion for **data, learning, and inner growth**, feel fre
 
 * **GitHub:** [dpm24800](https://github.com/dpm24800)
 * **LinkedIn:** [dpm24800](https://linkedin.com/in/dpm24800)
+* **Facebook:** [dpm.dh24800](https://www.facebook.com/dpm.dh24800)
 
 > “The best way to learn data science is to do it — one dataset, one model, one moment of awareness at a time.”
 
