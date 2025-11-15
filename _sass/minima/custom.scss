@@ -12,11 +12,19 @@ img{
     border-radius: 10px;
 }
 
+// Post Title
+.post-title {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+span.p-author, time.dt-published{
+  font-size: 12pt;
+}
 
 pre, code{
   background: #212e37;
 }
-
 
 hr{
   margin: 13px 0;
