@@ -9,13 +9,14 @@ layout: default
     <h2 class="post-description p-name" itemprop="name headline">({{ page.description | escape }})</h2>
     {%- endif -%}
     <p class="post-meta">
+      {%- if page.author -%}
+       👨 <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author}} </span></span>
+      {%- endif -%}
+
       <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        {{ page.date | date: date_format }}
+        🗓️ {{ page.date | date: date_format }}
       </time>
-      {%- if page.author -%}
-       🐰 <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
-      {%- endif -%}
     </p>
 
     {%- if page.youtube -%}
