@@ -32,6 +32,7 @@ Python supports multiple paradigms, including procedural, functional, and object
 * **Scalability:** Useful for large systems (ML pipelines, apps, games, etc.).
 
 ### 1.4. OOP vs. Procedural Programming
+
 | Procedural                      | OOP                              |
 | ------------------------------- | -------------------------------- |
 | Step-by-step instructions       | Based on objects & interactions  |
@@ -163,7 +164,7 @@ class Student:
         return cls.school
 ```
 
-### Static Method s— `@staticmethod`
+### Static Methods— `@staticmethod`
 - General utility method—not tied to class or object.
 - These do not access object or class data. They behave like normal functions but belong inside a class for logical grouping.
 - 
